@@ -1,3 +1,7 @@
-# giisIG
+# Introduction
 
-Feel free to modify this index page with your own awesome content!
+Lorem ipsum 
+
+### Explanation of the problematic
+
+### How to read this guide

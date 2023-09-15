@@ -1,0 +1,1 @@
+Here will come a brief explanation of the data dictionary + a link to the spreadsheet or smth like that 
