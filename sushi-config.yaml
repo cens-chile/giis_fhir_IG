@@ -29,8 +29,7 @@ menu:
     "References": references.html
   Artifacts: artifacts.html
   Profiles: 
-    "Adult Patient": StructureDefinition-AdultPatient.html
-    "Child Patient": StructureDefinition-ChildPatient.html
+    "GIIS Patient": StructureDefinition-GIISPatient.html
     "Child Caretaker": StructureDefinition-ChildCaretaker.html
     "Health Facility": StructureDefinition-HealthFacility.html
     "Village": StructureDefinition-Village.html

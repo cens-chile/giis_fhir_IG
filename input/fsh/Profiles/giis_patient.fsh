@@ -1,6 +1,6 @@
-Profile: AdultPatient
+Profile: GIISPatient
 Parent: Patient
-Description: "An adult patient from GIIS"
+Description: "A patient from GIIS, this one can be either a child or an adult."
 * identifier 1..1 MS
 * name 1..1 MS
 * name.family  and name.given MS
