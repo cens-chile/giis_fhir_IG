@@ -31,6 +31,9 @@ menu:
   Profiles: 
     "GIIS Patient": StructureDefinition-GIISPatient.html
     "Child Caretaker": StructureDefinition-ChildCaretaker.html
+    "Vaccination Appointment": StructureDefinition-VaccinationAppointment.html
+    "Vaccination event (calendar)": StructureDefinition-VaccinationCalendarEvent.html
+    "Vaccination event": StructureDefinition-VaccinationEvent.html
     "Health Facility": StructureDefinition-HealthFacility.html
     "Village": StructureDefinition-Village.html
   Testing: 

@@ -11,3 +11,9 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 * address 0..1
 * address.city 0..1 MS 
 * managingOrganization only Reference(HealthFacility) 
+
+* extension contains IdNumber named PIN 0..1 
+* extension[PIN] ^short = "Extension made for handling PIN, if the country uses it." 
+
+* extension contains VillageHandler named village 1..1 
+* extension[village] ^short = "Extension made for making a patient able to reference a village"
