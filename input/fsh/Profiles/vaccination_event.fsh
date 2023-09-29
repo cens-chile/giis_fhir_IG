@@ -1,5 +1,6 @@
 Profile: VaccinationEvent
 Parent: Immunization
+Id: VaccinationEvent
 Description: "A regular vaccination event, this one is for those ones that happens outside a vaccination calendar, so it can be related to an adult or a child."
 
 * identifier 1..1 MS

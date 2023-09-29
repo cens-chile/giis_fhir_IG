@@ -1,5 +1,6 @@
 Profile: HealthFacilityLocation
 Parent: Location
+Id: HealthFacilityLocation
 Description: "Health facility from GIIS. Based on the 'Location' resource so it can be used as a reference for every immunization event."
 * identifier 1..1 MS 
 * name 1..1 MS

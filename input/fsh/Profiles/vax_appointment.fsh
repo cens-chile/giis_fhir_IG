@@ -1,5 +1,6 @@
 Profile: VaccinationAppointment
 Parent: ImmunizationRecommendation
+Id: VaccinationAppointment
 Description: "The appointment handler for a vaccination event related to the vaccination calendar"
 * identifier 1..1 MS 
 * recommendation 1..* MS

@@ -1,5 +1,6 @@
 Profile: VaccinationCalendarEvent
 Parent: Immunization
+Id: VaccinationCalendarEvent
 Description: "A vaccination event related to a vaccination calendar. This vaccination event is only for child patients."
 
 * identifier 1..1 MS

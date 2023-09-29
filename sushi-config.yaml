@@ -17,13 +17,13 @@ menu:
   Context: 
     "Scope" : scope.html
     "Objectives": objectives.html
-    "Use cases": usecases.html
+    "Use cases": use_cases.html
   Data model & Exchange: 
     "Actors": actors.html
     "Transactions": transaction.html
     "Workflow": workflow.html
     "Data Dictionary": dictionary.html
-    "Self generated Value Sets": autovs.html
+    "Self generated Value Sets": auto_generated_VS.html
   Deployments: 
     "SMART Security": smart.html
     "References": references.html
@@ -36,9 +36,12 @@ menu:
     "Vaccination event": StructureDefinition-VaccinationEvent.html
     "Health Facility": StructureDefinition-HealthFacility.html
     "Village": StructureDefinition-Village.html
+    "ESAVI Questionnaire": StructureDefinition-EsaviQuestionnaireResponse.html
+  Examples: 
+    "ESAVI Questionnaire": Questionnaire-ESAVIQuestionnaire.html
   Testing: 
-    "Postman collection": postmancoll.html
-    "Test server": testserver.html
+    "Postman collection": postman_collection.html
+    "Test server": test_server.html
 
 instanceOptions:
   # When set to true, slices must be referred to by name and not only by a numeric index in order to be used

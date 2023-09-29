@@ -1,5 +1,6 @@
 Profile: ChildCaretaker
 Parent: RelatedPerson
+Id: ChildCaretaker
 Description: "Child's caretaker, can be one of the parents or another person. Child patients must be under 18 years old."
 * identifier 1..1 MS
 * name 1..1 MS 
