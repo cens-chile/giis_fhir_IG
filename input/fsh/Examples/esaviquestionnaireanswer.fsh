@@ -21,7 +21,7 @@ Usage: #example
 * item[=].item[=].text = "Data of who and where the notification is made"
 
 * item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ValueSet-CodPaises.html"
+* item[=].item[=].item[=].answerValueSet = "http://example.org/ValueSet/CodPaises"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "paisOrigen-Reg"
 * item[=].item[=].item[=].text = "Country where the register was originated"
@@ -37,7 +37,7 @@ Usage: #example
 * item[=].item[=].item[=].text = "Name of the Subnational Geographic Level of the Location of the Notifying Institution"
 
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ValueSet-ProfesionalNotificadorVS.html"
+* item[=].item[=].item[=].answerValueSet = "http://example.org/ValueSet/ProfesionalNotificadorVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoProfesionNotificador"
 * item[=].item[=].item[=].text = "Notifier profession code. In this case MUST be = 6"

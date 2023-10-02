@@ -1,3 +1,5 @@
+// CODE SYSTEMS
+
 CodeSystem: ProfesionalNotificadorCS
 Id: ProfesionalNotificadorCS
 Title: "Tipo de Profesional Notificador"
@@ -21,6 +23,9 @@ Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
 * #5 "Usuario u otro profesional no sanitario"
 * #6 "No definido por el usuario"
 
+
+// VALUE SETS
+ 
 ValueSet: CodPaises //revisado. CS externo ISO 3166, LinkID: paisOrigen-Reg
 Id: CodPaises
 Title: "Códigos de Países"
@@ -31,6 +36,7 @@ Description: "Codigos definidos para la identificación de países segun norma I
 * ^contact.name = "OPS"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
+* ^experimental = false
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system urn:iso:std:iso:3166
 
@@ -47,6 +53,20 @@ Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = false
 * ^date = "2022-02-02"
 * ^publisher = "PAHO - Pan American Health Organization"
 * include codes from system ProfesionalNotificadorCS
+
+ValueSet: ServiceDeliveryLocationRoleType
+Id: v3-ServiceDeliveryLocationRoleType
+Title: "ServiceDeliveryLocationRoleType"
+Description: "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered."
+* ^language = #en
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.1.11.17660"
+* ^version = "2.0.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2014-03-26"
+* include codes from system RoleCode where concept descendent-of #_ServiceDeliveryLocationRoleType
