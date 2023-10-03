@@ -11,11 +11,10 @@ Usage: #example
 * entry[patient].request.method = #POST
 * entry[patient].request.url = "Patient"
 
-
-* entry[relatedperson].fullUrl = "http://acme.com/ehr/fhir/Relatedperson/ExampleCaretaker"
+* entry[relatedperson].fullUrl = "http://acme.com/ehr/fhir/RelatedPerson/ExampleCaretaker"
 * entry[relatedperson].resource = ExampleCaretaker
 * entry[relatedperson].request.method = #POST
-* entry[relatedperson].request.url = "Relatedperson"
+* entry[relatedperson].request.url = "RelatedPerson"
 
 * entry[location].fullUrl = "http://acme.com/ehr/fhir/Location/ExampleVillage"
 * entry[location].resource = ExampleVillage

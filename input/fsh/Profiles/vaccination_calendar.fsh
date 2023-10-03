@@ -6,12 +6,17 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
 * identifier 1..1 MS
 * status 1..1 MS 
 * patient only Reference(GIISPatient) 
+
 * occurrenceDateTime 1..1 MS
 * occurrenceDateTime ^short = "Vaccine administration date YY-MM-DD."
+
 * site 1..1 MS 
 * statusReason 0..1 MS 
 * location only Reference(HealthFacilityLocation)
 * lotNumber 1..1 MS 
+
+* vaccineCode 1..1 MS 
+* vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code
 
 //Immunization campaign extension
 * extension contains Campaign named immunizationCampaign 0..1 MS 

@@ -58,15 +58,15 @@ Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
 * ^publisher = "PAHO - Pan American Health Organization"
 * include codes from system ProfesionalNotificadorCS
 
-ValueSet: ServiceDeliveryLocationRoleType
-Id: v3-ServiceDeliveryLocationRoleType
-Title: "ServiceDeliveryLocationRoleType"
-Description: "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered."
-* ^language = #en
-* ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.840.1.113883.1.11.17660"
-* ^version = "2.0.0"
-* ^status = #active
-* ^experimental = false
-* ^date = "2014-03-26"
-* include codes from system RoleCode where concept descendent-of #_ServiceDeliveryLocationRoleType
+// ValueSet: ServiceDeliveryLocationRoleType
+// Id: v3-ServiceDeliveryLocationRoleType
+// Title: "ServiceDeliveryLocationRoleType"
+// Description: "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered."
+// * ^language = #en
+// * ^identifier.system = "urn:ietf:rfc:3986"
+// * ^identifier.value = "urn:oid:2.16.840.1.113883.1.11.17660"
+// * ^version = "2.0.0"
+// * ^status = #active
+// * ^experimental = false
+// * ^date = "2014-03-26"
+// * include codes from system RoleCode where concept descendent-of #_ServiceDeliveryLocationRoleType

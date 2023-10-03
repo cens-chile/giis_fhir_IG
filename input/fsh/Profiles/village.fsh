@@ -8,7 +8,7 @@ Description: "Village where a health facility is part of"
 
 * type 1..1 MS
 * type.coding.code 1..1 MS 
-* type from v3-ServiceDeliveryLocationRoleType
+* type from http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
 * type.coding.code ^short = "Code MUST be: HOSP"
 
 * managingOrganization only Reference(HealthFacility)

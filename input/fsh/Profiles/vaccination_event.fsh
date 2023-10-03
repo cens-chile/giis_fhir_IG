@@ -5,16 +5,24 @@ Description: "A regular vaccination event, this one is for those ones that happe
 
 * identifier 1..1 MS
 * patient only Reference(GIISPatient)
+
 * occurrenceDateTime 1..1 MS
 * occurrenceDateTime ^short = "Vaccine administration date YY-MM-DD."
 * statusReason 0..1 MS 
 * location only Reference(HealthFacilityLocation)
-* lotNumber 1..1 MS 
+
+* lotNumber 0..1 MS 
 * lotNumber ^short = "If the vaccine is not from stock, the lot number is free text"
+
 * vaccineCode 1..1 MS 
+* vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code
+
 * status 1..1 MS 
 * reasonCode 1..1 MS 
+* reasonCode from http://hl7.org/fhir/ValueSet/immunization-reason
+
 * site 1..1 MS
+* site from http://hl7.org/fhir/ValueSet/immunization-site
 
 //Immunization campaign extension
 * extension contains Campaign named immunizationCampaign 0..1 MS 
