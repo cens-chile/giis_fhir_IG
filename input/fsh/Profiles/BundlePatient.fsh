@@ -6,6 +6,7 @@ Description: "Bundle used to carry all the information related to a patient"
 
 * id MS 
 * type MS 
+* type = #transaction
 * timestamp MS
 
 * entry ^slicing.discriminator.type = #profile

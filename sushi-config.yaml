@@ -26,7 +26,7 @@ menu:
     "Self generated Value Sets": auto_generated_VS.html
   Deployments: 
     "SMART Security": smart.html
-    "References": references.html
+    "References": ig_references.html
   Artifacts: artifacts.html
   # Profiles: 
   #   "GIIS Patient": StructureDefinition-GIISPatient.html
