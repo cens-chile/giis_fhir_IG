@@ -1,6 +1,6 @@
 Instance: ExampleBundleVaccinationCalendar
 Title: "Vaccination event Bundle"
-Description: "Vaccination event Bundle, not from the vaccination calendar"
+Description: "Vaccination event Bundle, from the vaccination calendar, related to child patients."
 InstanceOf: BundleVaccinationCalendar
 Usage: #example
 

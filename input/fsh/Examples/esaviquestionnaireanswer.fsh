@@ -46,7 +46,7 @@ Usage: #example
 * item[=].item[+].type = #group
 * item[=].item[=].required = true
 * item[=].item[=].linkId = "fechas"
-* item[=].item[=].text = "Fechas Administrativas (al menos una fecha es necesaria)"
+* item[=].item[=].text = "Administrative Dates (at least one date is necessary)"
 
 * item[=].item[=].item[0].type = #date
 * item[=].item[=].item[=].required = true
