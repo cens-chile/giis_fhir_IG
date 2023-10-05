@@ -1,5 +1,5 @@
 Instance: ExampleBundleVaccinationCalendar
-Title: "Vaccination event Bundle"
+Title: "Vaccination calendar event Bundle"
 Description: "Vaccination event Bundle, from the vaccination calendar, related to child patients."
 InstanceOf: BundleVaccinationCalendar
 Usage: #example

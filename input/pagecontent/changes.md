@@ -1,0 +1,3 @@
+- <b>Version with some items having explicative text<b> 2023-10-05 - v0.1.2
+- <b>Version with all the profiles and examples<b> 2023-10-04 - v0.1.1
+- <b>Initial commit<b> 2023-09-14 - v0.1.0

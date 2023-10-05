@@ -4,7 +4,7 @@ name: giisIG
 title: GIIS Implementation Guide
 description: Implementation Guide for GIIS
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 0.1.2
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -15,11 +15,10 @@ publisher:
 menu:
   Home: index.html
   Context: 
-    "Scope" : scope.html
     "Objectives": objectives.html
     "Use cases": use_cases.html
-  Data model & Exchange: 
     "Actors": actors.html
+  Data model & Exchange: 
     "Transactions": transaction.html
     "Workflow": workflow.html
     "Data Dictionary": dictionary.html
@@ -42,6 +41,7 @@ menu:
   Testing: 
     "Postman collection": postman_collection.html
     "Test server": test_server.html
+  Changes: changes.html
 
 instanceOptions:
   # When set to true, slices must be referred to by name and not only by a numeric index in order to be used
