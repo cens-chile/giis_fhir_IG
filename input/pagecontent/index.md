@@ -16,5 +16,4 @@ Every item in the navigation bar will be:
 * [Data model & Exchange](data_model_and_exchange.html) will contain technicall data such as transaction with a related diagram, workflow, the data dictionary and an explanation of the self generated value sets. 
 * [Deployments](deployments.html)will have a full explanation about how do we use SMART security and will also have the references to any other implementation guide. 
 * [Artifacts](artifacts.html) is the core of the guide, this is where you find every bundle of data, profile, example, terminology(CodeSystem/ValueSet) and extensions related to this solution. 
-* [Testing](testing.html)
 * [Changes](changes.html) contains every change made to the guide. 
