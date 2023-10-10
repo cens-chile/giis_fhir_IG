@@ -6,7 +6,7 @@ Usage: #definition
 * meta.source = "#1713de7ffdefbac0"
 * url = "https://paho.org/fhir/giis/SearchParameter/name-village"
 * version = "1"
-* name = "IdentifierCountry"
+* name = "NameVillage"
 * status = #active
 * experimental = true
 * date = "2023-10-10"
