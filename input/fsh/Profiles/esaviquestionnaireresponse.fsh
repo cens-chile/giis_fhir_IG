@@ -11,7 +11,7 @@ Description: "Questionnaire response used to handle the ESAVI questionnaire for 
 * status ^binding.description = "Use in-progress | completed"
 
 * questionnaire 1..1 MS 
-* questionnaire = "http://example.org/Questionnaire/ESAVIQuestionnaire"
+* questionnaire = "https://paho.org/fhir/giis/Questionnaire/ESAVIQuestionnaire"
 
 * item 1..* MS 
 * item ^short = "Groups, subgroups and questions to be answered based on the Questionnaire."

@@ -1,5 +1,5 @@
 id: fhir.giis
-canonical: http://example.org
+canonical: https://paho.org/fhir/giis
 name: giisIG
 title: GIIS Implementation Guide
 description: Implementation Guide for GIIS
