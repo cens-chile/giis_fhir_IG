@@ -1,0 +1,12 @@
+@startuml search-esavi
+
+Participant "External Entity"  as ExternalEntity
+Participant "FHIR Facade"  as FHIRFacade
+Participant "GIIS"  as GIIS
+
+ExternalEntity -> FHIRFacade: GET QuestionnaireResponse (patient.identifier:<<value>>)
+FHIRFacade -> GIIS: Query SELECT
+GIIS --> FHIRFacade: Query result
+FHIRFacade --> ExternalEntity: Corresponding QuestionnaireResponse
+
+@enduml

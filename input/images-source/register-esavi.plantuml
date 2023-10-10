@@ -1,0 +1,12 @@
+@startuml register-esavi
+
+Participant "External Entity"  as ExternalEntity
+Participant "FHIR Facade"  as FHIRFacade
+Participant "GIIS"  as GIIS
+
+ExternalEntity -> FHIRFacade: POST QuestionnaireResponse
+FHIRFacade -> GIIS: Query INSERT
+GIIS --> FHIRFacade: Success
+FHIRFacade --> ExternalEntity: {201 Status Code}
+
+@enduml

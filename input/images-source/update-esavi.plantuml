@@ -1,0 +1,12 @@
+@startuml update-esavi
+
+Participant "External Entity"  as ExternalEntity
+Participant "FHIR Facade"  as FHIRFacade
+Participant "GIIS"  as GIIS
+
+ExternalEntity -> FHIRFacade: PUT QuestionnaireResponse
+FHIRFacade -> GIIS: Query UPDATE
+GIIS --> FHIRFacade: Success
+FHIRFacade --> ExternalEntity: {200, 204 Status Code}
+
+@enduml

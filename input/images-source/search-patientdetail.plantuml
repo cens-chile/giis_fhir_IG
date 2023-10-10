@@ -1,0 +1,12 @@
+@startuml search-patientdetail
+
+Participant "External Entity"  as ExternalEntity
+Participant "FHIR Facade"  as FHIRFacade
+Participant "GIIS"  as GIIS
+
+ExternalEntity -> FHIRFacade: GET Patient (patient.identifier:<<value>>)
+FHIRFacade -> GIIS: Query SELECT
+GIIS --> FHIRFacade: Query result
+FHIRFacade --> ExternalEntity: Bundle (Patient)
+
+@enduml
