@@ -4,7 +4,7 @@ name: giisIG
 title: GIIS Implementation Guide
 description: Implementation Guide for GIIS
 status: draft # draft | active | retired | unknown
-version: 0.1.2
+version: 0.1.4
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -27,20 +27,9 @@ menu:
     "SMART Security": smart.html
     "References": ig_references.html
   Artifacts: artifacts.html
-  # Profiles: 
-  #   "GIIS Patient": StructureDefinition-GIISPatient.html
-  #   "Child Caretaker": StructureDefinition-ChildCaretaker.html
-  #   "Vaccination Appointment": StructureDefinition-VaccinationAppointment.html
-  #   "Vaccination event (calendar)": StructureDefinition-VaccinationCalendarEvent.html
-  #   "Vaccination event": StructureDefinition-VaccinationEvent.html
-  #   "Health Facility": StructureDefinition-HealthFacility.html
-  #   "Village": StructureDefinition-Village.html
-  #   "ESAVI Questionnaire": StructureDefinition-EsaviQuestionnaireResponse.html
-  # Examples: 
-  #   "ESAVI Questionnaire": Questionnaire-ESAVIQuestionnaire.html 
-  Testing: 
-    "Postman collection": postman_collection.html
-    "Test server": test_server.html
+  # Testing: 
+  #   "Postman collection": postman_collection.html
+  #   "Test server": test_server.html
   Changes: changes.html
 
 instanceOptions:
