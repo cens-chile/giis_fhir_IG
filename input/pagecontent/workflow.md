@@ -1,11 +1,15 @@
 A more human readeable way of seing the whole scenario is looking at this diagram. 
 However, if you want to get more into the technical things, [this section of the guide](transaction.html) is for you.
 
+<br>
+
 <div align="center">
 
-![Workflow](../images/workflow.png)
+<img src="workflow.png">
 
 </div>
+
+<br>
 
 The external entities will have the possibility of making the registration and/or the searching of a patient, vaccination event and an ESAVI/AEFI with standardized data. 
 
