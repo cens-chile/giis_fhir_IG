@@ -3,7 +3,7 @@ However, if you want to get more into the technical things, [this section of the
 
 <div align="center">
 
-<img src="/input/images-source/workflow.png">
+![Workflow](../images/workflow.png)
 
 </div>
 

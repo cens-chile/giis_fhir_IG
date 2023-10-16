@@ -1,4 +1,4 @@
-- <b>Version with the workflow diagram<b> 2023-10- - v0.1.4
+- <b>Version with the workflow diagram<b> 2023-10-13 - v0.1.4
 - <b>Version with the transactions diagrams<b> 2023-10-10 - v0.1.3
 - <b>Version with some items having explicative text<b> 2023-10-05 - v0.1.2
 - <b>Version with all the profiles and examples<b> 2023-10-04 - v0.1.1
