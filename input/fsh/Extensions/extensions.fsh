@@ -1,9 +1,9 @@
 /* ---------------------------------------EXTENSIONS----------------------------------------*/
 
-Extension: IdNumber
-Id: giis-idnumber
-Description: "Extension made for handling a PIN, as some countries have and use it."
-* valueString 0..1
+// Extension: IdNumber
+// Id: giis-idnumber
+// Description: "Extension made for handling a PIN, as some countries have and use it."
+// * valueString 0..1
 
 Extension: HealthStatus
 Id: giis-healthstatus
