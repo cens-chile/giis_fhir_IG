@@ -13,6 +13,10 @@ Usage: #example
 * name.given = "George"
 * name.family = "Denver"
 
+* telecom.system = #phone
+* telecom.value = "12490834"
+* telecom.use = #mobile
+
 * gender = #male
 
 * birthDate = "1996-12-13"
