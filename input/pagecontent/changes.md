@@ -1,3 +1,4 @@
+- <b>Changes made to the transactions related to patients, added patient's request/response, updated the patient profile<b> 2023-10-30 - v0.1.6
 - <b>Changes made to the use case section and update of the Patient profile<b> 2023-10-19 - v0.1.5
 - <b>Version with the workflow diagram<b> 2023-10-13 - v0.1.4
 - <b>Version with the transactions diagrams<b> 2023-10-10 - v0.1.3

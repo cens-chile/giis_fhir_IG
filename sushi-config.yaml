@@ -4,7 +4,7 @@ name: giisIG
 title: GIIS Implementation Guide
 description: Implementation Guide for GIIS
 status: draft # draft | active | retired | unknown
-version: 0.1.5
+version: 0.1.6
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
@@ -32,6 +32,8 @@ menu:
   #   "Postman collection": postman_collection.html
   #   "Test server": test_server.html
   Changes: changes.html
+  See Also: 
+    "Patient's request/response example": patient_request_response.html
 
 pages: 
   index.md:
@@ -46,6 +48,7 @@ pages:
   ig_references.md:
   artifacts.html:
   changes.md:
+  patient_request_response.md:
   context.md:
   data_model_and_exchange.md:
   deployments.md: 

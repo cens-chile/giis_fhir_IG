@@ -5,7 +5,11 @@ InstanceOf: GIISPatient
 Usage: #example
 
 //* extension[IdNumber].valueString = "abcd4589"
+* extension[VillageHandler].url = "https://paho.org/fhir/giis/StructureDefinition/giis-village"
 * extension[VillageHandler].valueReference = Reference(ExampleVillage)
+
+* extension[BirthPlaceType].url = "https://paho.org/fhir/giis/StructureDefinition/giis-birthplace"
+* extension[BirthPlaceType].valueString = "Hospital"
 
 * identifier[SystemID].system = "http://www.giisidentifier.org/ID/SystemID"
 * identifier[SystemID].value = "16399288"

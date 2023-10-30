@@ -1,11 +1,40 @@
 
+Here you will find every transaction detailed as it finest. They will have a diagram associated with each one and also the request and response of each transaction.
+To be able to make a transaction possible, you need to answer to the SMART protocol first [here](smart.html) is an explanation of how does that works and [here](https://www.hl7.org/fhir/smart-app-launch/backend-services.html) is a link to the SMART App Launch guide, which can have way more details. 
+
+Also, each transaction that is going to be shown here is a use case, which you can read in [this section](use_cases.html) of the guide, and have brief explanations of what is expected. 
+- Patients will have: 
+    - Registration
+    - Searching
+- Immunization will have: 
+    - Registration
+    - Searching 
+    - Update
+- ESAVI/AEFI will have: 
+    - Registration 
+    - Searching
+    - Update
+
+
 ### Registration of a patient
 
-From the external entity, the FHIR facade receives a POST with the Bundle related to the patient. The facade makes the transformation of the standardized data to send the query to the GIIS. Here is an [example Bundle](Patient-ExampleGiispatient.html). This type of Bundle works just fine for either for an adult or a child patient. 
+From the external entity, the FHIR facade receives a POST with the Bundle related to the patient. The facade makes the transformation of the standardized data to send the query to the GIIS. Here is an [example Bundle](Patient-ExampleGiispatient.html). This type of Bundle works just fine for either an adult or a child patient. 
  
 <div>
 {% include register-patient.svg %}
 </div> 
+
+#### Request
+
+The external entity issues an HTTP **POST** type of operation, this operation will have every mandatory data plus any optional one, the FHIR Facade will receive this data and then transform it to standardized data to query it into the GIIS. 
+
+#### Response 
+
+The FHIR Facade respond with a **201 Status Code**, meaning that the data was stored succesfully. 
+
+#### Example Request/Response 
+
+You can see an example of a request and response of this post [HERE](patient_request_response.html)
 
 ### Searching of a patient
 
