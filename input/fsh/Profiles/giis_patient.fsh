@@ -3,7 +3,7 @@ Parent: Patient
 Id: GIISPatient
 Description: "A patient from GIIS, this one can be either a child or an adult."
 
-* identifier 0..* MS 
+* identifier 0..4 MS 
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -62,15 +62,47 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 * birthDate 1..1 MS
 * gender 1..1 MS
 
-* telecom 0..* MS   
-  * system 0..1 MS
-  * system from http://hl7.org/fhir/ValueSet/contact-point-system
-  * system ^binding.description = "Use phone | email" 
-  * value 0..1 MS
-  * use 0..1 MS 
-  * use from http://hl7.org/fhir/ValueSet/contact-point-use
-  * use ^binding.description = "If you want to save mobile phone, use = mobile, if not, use = home"
+* telecom 0..3 MS   
+
+* telecom ^slicing.discriminator[+].type = #value
+* telecom ^slicing.discriminator[=].path = "system"
+* telecom ^slicing.discriminator[+].type = #value
+* telecom ^slicing.discriminator[=].path = "use"
+* telecom ^slicing.rules = #closed
+* telecom ^slicing.description = "This slice will help us build a proper telecom"
+* telecom contains GIISPhone 0..1 MS and GIISMobile 0..1 MS and GIISEmail 0..1 MS
 * telecom ^short = "Contact detail for the individual"
+
+* telecom[GIISPhone]
+  * system 1..1 MS
+  * value 1..1 MS
+  * use 1..1 MS
+* telecom[GIISPhone].system = #phone
+* telecom[GIISPhone].use = #home 
+
+* telecom[GIISMobile]
+  * system 1..1 MS
+  * value 1..1 MS
+  * use 1..1 MS
+* telecom[GIISMobile].system = #phone
+* telecom[GIISMobile].use = #mobile 
+
+* telecom[GIISEmail]
+  * system 1..1 MS
+  * value 1..1 MS
+  * use 1..1 MS
+* telecom[GIISEmail].system = #email
+* telecom[GIISEmail].use = #home
+
+* contact 0..1 MS
+  * relationship 1..1 MS 
+  * name 1..1 MS
+  * name.text 1..1 MS 
+  * name.text ^short = "Full name of the patient's next of kin" 
+  * telecom 1..1 MS 
+    * system 1..1 MS
+    * value 1..1 MS 
+* contact.relationship.coding.code = #N
 
 * address 0..1 MS 
 * address.city 0..1 MS 

@@ -33,10 +33,10 @@ Extension: BirthPlaceType
 Id: giis-birthplace
 Title: "Birthplace"
 Description: "Extension used to handle the birthplace of a patient, mainly used for searching purposes."
-* valueString 0..1
+* valueCodeableConcept 0..1
 
 Extension: CommunityType
 Id: giis-community
 Title: "Community"
 Description: "Extension used to handle the community of a patient"
-* valueString 0..1
+* valueCodeableConcept 0..1
