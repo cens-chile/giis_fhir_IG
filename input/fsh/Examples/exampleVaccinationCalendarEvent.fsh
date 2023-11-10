@@ -6,17 +6,23 @@ Usage: #example
 
 * extension[AEFIHandler].valueBoolean = false
 
-* identifier.value = "vc-1230"
+* extension[AppointmentHandler].url = "https://paho.org/fhir/giis/StructureDefinition/giis-appointment"
+* extension[AppointmentHandler].valueReference = Reference(ExampleVaccinationAppointment)
 
 * patient = Reference(ExampleGiispatient)
 * location = Reference(ExampleHealthfacilityLocation)
 
-* status = #completed 
+* status = #not-done 
 
 * occurrenceDateTime = "2023-08-13"
 
 * lotNumber = "all231"
 
-* vaccineCode.coding = http://hl7.org/fhir/sid/cvx#146
+* vaccineCode.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccineCodeCS"
+* vaccineCode.coding.display = "IPV"
+* vaccineCode.text = "IPV"
 
-* site.coding = http://terminology.hl7.org/CodeSystem/v3-ActSite#LA
+* site.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS"
+* site.coding.display = "Left Arm"
+
+* note.text = "Patient with belonephobia"

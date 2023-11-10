@@ -4,7 +4,7 @@ Description: "GIIS Patient example"
 InstanceOf: GIISPatient
 Usage: #example
 
-//* extension[IdNumber].valueString = "abcd4589"
+
 * extension[VillageHandler].url = "https://paho.org/fhir/giis/StructureDefinition/giis-village"
 * extension[VillageHandler].valueReference = Reference(ExampleVillage)
 

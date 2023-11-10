@@ -60,7 +60,10 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 * name.given 1..1 MS
 
 * birthDate 1..1 MS
+
 * gender 1..1 MS
+* gender ^short = "Gender MUST be #male OR #female"
+* gender ^definition = "Gender MUST be #male OR #female, this due to the GIIS handling this internally as a boolean."
 
 * telecom 0..3 MS   
 
@@ -96,6 +99,7 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 
 * contact 0..1 MS
   * relationship 1..1 MS 
+  * relationship.coding.code 1..1 MS
   * name 1..1 MS
   * name.text 1..1 MS 
   * name.text ^short = "Full name of the patient's next of kin" 
