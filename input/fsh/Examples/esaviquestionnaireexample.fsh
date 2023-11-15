@@ -28,7 +28,7 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueString = "Saint's George Ave. 12399, BS, Bahamas"
 * item[=].item[=].item[+].linkId = "codigoProfesionNotificador"
 * item[=].item[=].item[=].text = "Notifier profession code. In this case MUST be = 6"
-* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/ProfesionalNotificadorCS#6
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorCS#6
 * item[=].item[+].linkId = "fechas"
 * item[=].item[=].text = "Administrative Dates (at least one date is necessary)"
 * item[=].item[=].item[0].linkId = "fechaConsulta"

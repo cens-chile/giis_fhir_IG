@@ -11,7 +11,7 @@ Usage: #example
 * entry[patient].request.method = #POST
 * entry[patient].request.url = "Patient"
 
-* entry[immunizationrecommendation].fullUrl = "http://acme.com/ehr/fhir/ImmunizationRecommendation/ExampleVaxAppointment"
+* entry[immunizationrecommendation].fullUrl = "http://acme.com/ehr/fhir/ImmunizationRecommendation/ExampleVaccinationAppointment"
 * entry[immunizationrecommendation].resource = ExampleVaccinationAppointment
 * entry[immunizationrecommendation].request.method = #POST
 * entry[immunizationrecommendation].request.url = "ImmunizationRecommendation"
