@@ -1,8 +1,0 @@
-Instance: ExampleGroup
-Title: "Example Group"
-Description: "Example Group, used only on a vaccination campaign"
-InstanceOf: Group
-Usage: #example
-
-* type = "person"
-
