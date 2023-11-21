@@ -32,8 +32,8 @@ Description: "A regular vaccination event, this one is for those ones that happe
 * note MS 
 
 //Immunization campaign extension
-* extension contains Campaign named immunizationCampaign 0..1 MS 
-* extension[immunizationCampaign] ^short = "Extension made for handling Immunization Campaigns." 
+* extension contains Campaign named vaccinationCampaign 0..1 MS 
+* extension[vaccinationCampaign] ^short = "Extension made for handling Immunization Campaigns." 
 
 //AEFI boolean extension
 * extension contains AEFIHandler named AEFI 0..1 MS 

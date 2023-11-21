@@ -9,8 +9,8 @@ Description: "Extension made for handling the health status of the patient."
 Extension: Campaign
 Id: giis-campaign
 Title: "Campaign"
-Description: "Extension used to handle immunization campaign."
-* valueCodeableConcept 0..1 
+Description: "Extension used to handle vaccination campaigns."
+* valueReference only Reference(CarePlan)
 
 Extension: AEFIHandler
 Id: giis-aefi

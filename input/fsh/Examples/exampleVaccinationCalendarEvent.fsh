@@ -6,6 +6,9 @@ Usage: #example
 
 * extension[AEFIHandler].valueBoolean = false
 
+* extension[Campaign].url = "https://paho.org/fhir/giis/StructureDefinition/giis-campaign"
+* extension[Campaign].valueReference = Reference(ExampleVaccinationCampaign)
+
 * extension[AppointmentHandler].url = "https://paho.org/fhir/giis/StructureDefinition/giis-appointment"
 * extension[AppointmentHandler].valueReference = Reference(ExampleVaccinationAppointment)
 

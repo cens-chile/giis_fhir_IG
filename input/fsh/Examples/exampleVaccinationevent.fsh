@@ -5,8 +5,7 @@ Description: "Example of a vaccination event, this ones happens outside a vaccin
 Usage: #example
 
 * extension[Campaign].url = "https://paho.org/fhir/giis/StructureDefinition/giis-campaign"
-* extension[Campaign].valueCodeableConcept.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccinationCampaignCS"
-* extension[Campaign].valueCodeableConcept.coding.display = "None"
+* extension[Campaign].valueReference = Reference(ExampleVaccinationCampaign)
 
 * extension[HealthStatus].url = "https://paho.org/fhir/giis/StructureDefinition/giis-healthstatus"
 * extension[HealthStatus].valueCodeableConcept.coding.system = "https://paho.org/fhir/giis/CodeSystem/HealthStatusCS"

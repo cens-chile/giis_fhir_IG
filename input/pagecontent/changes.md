@@ -1,3 +1,4 @@
+- <b>Added the "Vaccination Campaign" profile + fixed any example related to immunizations that has the campaign as a reference<b> 2023-11-21 - v.0.1.8
 - <b>Added ESAVI IG dependencies <b> 2023-11-15 - v0.1.72
 - <b>Mayor changes to Profiles/Examples/Extensions related to Vaccination events<b> 2023-11-06 - v0.1.7
 - <b>Changes made to the transactions related to patients, added patient's request/response, updated the patient profile<b> 2023-10-30 - v0.1.6

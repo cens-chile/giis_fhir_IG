@@ -29,8 +29,8 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
 * note MS 
 
 //Immunization campaign extension
-* extension contains Campaign named immunizationCampaign 0..1 MS 
-* extension[immunizationCampaign] ^short = "Extension made for handling Immunization Campaigns." 
+* extension contains Campaign named vaccinationCampaign 0..1 MS 
+* extension[vaccinationCampaign] ^short = "Extension made for handling Immunization Campaigns." 
 
 //AEFI true-false extension
 * extension contains AEFIHandler named AEFI 0..1 MS 
