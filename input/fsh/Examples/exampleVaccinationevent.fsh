@@ -9,7 +9,9 @@ Usage: #example
 
 * extension[HealthStatus].url = "https://paho.org/fhir/giis/StructureDefinition/giis-healthstatus"
 * extension[HealthStatus].valueCodeableConcept.coding.system = "https://paho.org/fhir/giis/CodeSystem/HealthStatusCS"
+* extension[HealthStatus].valueCodeableConcept.coding.code = #15
 * extension[HealthStatus].valueCodeableConcept.coding.display = "Healthy"
+* extension[HealthStatus].valueCodeableConcept.text = "Healthy"
 
 * extension[AEFIHandler].valueBoolean = false
 
@@ -23,13 +25,19 @@ Usage: #example
 * lotNumber = "ipv231"
 
 * reasonCode.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccinationReasonCS"
-* reasonCode.coding.display = "Travelling"
+* reasonCode.coding.code = #3
+* reasonCode.coding.display = "Travel consult"
+* reasonCode.text = "Travel consult"
+
 
 * vaccineCode.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccineCodeCS"
-* vaccineCode.coding.display = "IPV"
-* vaccineCode.text = "IPV"
+* vaccineCode.coding.code = #24
+* vaccineCode.coding.display = "anthrax vaccine"
+* vaccineCode.text = "anthrax vaccine"
 
 * site.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS"
+* site.coding.code = #1
 * site.coding.display = "Left Arm"
+* site.text = "Left Arm"
 
 * note.text = "Patient with belonephobia"

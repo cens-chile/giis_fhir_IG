@@ -16,7 +16,7 @@ Description: "The appointment handler for a vaccination event related to the vac
 * recommendation.dateCriterion 1..1 MS
   * code MS 
   * value MS 
-* recommendation.dateCriterion.value ^short = "Date as YY-MM-DD"
+* recommendation.dateCriterion.value ^short = "Date as YYYY-MM-DD"
 
 * patient only Reference(GIISPatient)
 

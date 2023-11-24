@@ -11,11 +11,17 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
 * patient only Reference(GIISPatient) 
 
 * occurrenceDateTime 1..1 MS
-* occurrenceDateTime ^short = "Vaccine administration date YY-MM-DD."
+* occurrenceDateTime ^short = "Vaccine administration date as YYYY-MM-DD."
 
 * site 1..1 MS 
+  * coding MS 
+  * text 1..1 MS
+* site from https://paho.org/fhir/giis/ValueSet/VaccinationSiteVS (example)
 
 * statusReason 0..1 MS 
+  * coding MS 
+  * text 1..1 MS
+* statusReason from https://paho.org/fhir/giis/ValueSet/NonVaccinationReasonVS (example)
 
 * location only Reference(HealthFacilityLocation)
 
@@ -25,6 +31,7 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
   * coding MS 
   * text 1..1 MS
 * vaccineCode.text ^short = "Vaccine name as text" 
+* vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code (example)
 
 * note MS 
 
