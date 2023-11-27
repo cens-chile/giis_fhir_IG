@@ -19,7 +19,7 @@ Usage: #definition
 * code = #name-village
 * base[0] = #Patient
 * type = #string
-* expression = "Patient.resolve().name.extension('https://paho.org/fhir/giis/StructureDefinition/giis-village')" // deleted: .resolve() due to build errors
+* expression = "Patient.extension('https://paho.org/fhir/giis/StructureDefinition/giis-village')" // deleted: .resolve().name due to build errors
 * multipleAnd = false
 * multipleOr = false
 * xpathUsage = #normal

@@ -119,8 +119,8 @@ Title: "Health Status"
 Description: "Health Status codes as momentary examples"
 * include codes from system HealthStatusCS
 
-ValueSet: AdverseEventsVS
-Id: AdverseEventsVS
-Title: "ESAVI/AEFI value set"
-Description: "Adverse events codes as momentary examples, in this case making reference to SNOMED as the CodeSystem"
-* codes from system http://www.snomed.org/ where concept is-a #404684003
+// ValueSet: AdverseEventsVS
+// Id: AdverseEventsVS
+// Title: "ESAVI/AEFI value set"
+// Description: "Adverse events codes as momentary examples, in this case making reference to SNOMED as the CodeSystem"
+// * codes from system http://www.snomed.org/sct where concept is-a #404684003
