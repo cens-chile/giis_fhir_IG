@@ -55,3 +55,11 @@ Description: "Extension used to be able to do a direct reference to a Immunizati
 * ^context.type = #element 
 * ^context.expression = #Immunization
 * valueReference only Reference(ImmunizationRecommendation)
+
+Extension: LotIdNumber
+Id: giis-lotidnumber
+Title: "Lot Id Number"
+Description: "Extension used to handle of the lotId coming or needed for the GIIS database"
+* ^context.type = #element
+* ^context.expression = #Immunization
+* valueInteger 0..1

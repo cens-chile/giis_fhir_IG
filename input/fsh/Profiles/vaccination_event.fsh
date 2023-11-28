@@ -10,7 +10,7 @@ Description: "A regular vaccination event, this one is for those ones that happe
 * occurrenceDateTime ^short = "Vaccine administration date YYYY-MM-DD."
 
 * statusReason 0..1 MS
-  * coding MS 
+  * coding 0..1 MS 
   * text 1..1 MS
 * statusReason from https://paho.org/fhir/giis/ValueSet/NonVaccinationReasonVS (example)
 
@@ -21,7 +21,7 @@ Description: "A regular vaccination event, this one is for those ones that happe
 * lotNumber ^short = "If the vaccine is not from stock, the lot number is free text"
 
 * vaccineCode 1..1 MS 
-  * coding MS 
+  * coding 0..1 MS 
   * text 1..1 MS
 * vaccineCode.text ^short = "Vaccine name as text" 
 * vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code (example)
@@ -30,16 +30,16 @@ Description: "A regular vaccination event, this one is for those ones that happe
 * status ^short = "Code MUST be #completed OR #not-done"
 
 * reasonCode 1..1 MS 
-  * coding MS 
+  * coding 0..1 MS 
   * text 1..1 MS
 * reasonCode from https://paho.org/fhir/giis/ValueSet/VaccinationReasonVS (example)
 
 * site 1..1 MS
-  * coding MS 
+  * coding 0..1 MS 
   * text 1..1 MS
 * site from https://paho.org/fhir/giis/ValueSet/VaccinationSiteVS (example)
 
-* note MS 
+* note 0..1 MS 
 
 //Immunization campaign extension
 * extension contains Campaign named vaccinationCampaign 0..1 MS 
@@ -53,4 +53,6 @@ Description: "A regular vaccination event, this one is for those ones that happe
 * extension contains HealthStatus named healthstatus 1..1 MS
 * extension[healthstatus] ^short = "Extension made for handling patient's health status prior to this vaccination event"
 
-
+//LotId Number extension
+* extension contains LotIdNumber named lotIdNumber 0..1 MS 
+* extension[lotIdNumber] ^short = "Exttension made for handling the LotId number for the GIIS db"

@@ -22,7 +22,7 @@ Usage: #example
 
 * occurrenceDateTime = "2023-08-13"
 
-* lotNumber = "ipv231"
+* lotNumber = "av231"
 
 * reasonCode.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccinationReasonCS"
 * reasonCode.coding.code = #3

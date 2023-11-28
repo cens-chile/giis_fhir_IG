@@ -8,8 +8,8 @@ Description: "The appointment handler for a vaccination event related to the vac
 * date 1..1 MS
 
 * recommendation 1..* MS
-* recommendation.vaccineCode 1..* MS 
-* recommendation.vaccineCode.coding MS 
+* recommendation.vaccineCode 1..1 MS 
+* recommendation.vaccineCode.coding 0..1 MS 
 * recommendation.vaccineCode.text 1..1 MS 
 * recommendation.forecastStatus 1..1 MS 
 

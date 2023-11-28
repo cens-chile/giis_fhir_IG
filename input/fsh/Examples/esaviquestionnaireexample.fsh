@@ -87,6 +87,13 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "nombreDireccionVacunatorio"
 * item[=].item[=].item[=].text = "Full address of the institution where the vaccine was administered"
 * item[=].item[=].item[=].answer.valueString = "Saint's George Ave. 12399"
+* item[+].linkId = "tipoVacunacion"
+* item[=].item[0].linkId = "vaccinationEventCalendarId"
+* item[=].item[=].text = "Id of a GIIS calendarized vaccination event"
+* item[=].item[=].answer.valueInteger = 12342
+* item[=].item[+].linkId = "vaccinationEventId"
+* item[=].item[=].text = "Id of a NON calendarized GIIS vaccination event"
+* item[=].item[=].answer.valueInteger = 231234
 
 ////////// registroEsavi /////////////
 

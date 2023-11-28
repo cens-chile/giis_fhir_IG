@@ -14,12 +14,12 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
 * occurrenceDateTime ^short = "Vaccine administration date as YYYY-MM-DD."
 
 * site 1..1 MS 
-  * coding MS 
+  * coding 0..1 MS 
   * text 1..1 MS
 * site from https://paho.org/fhir/giis/ValueSet/VaccinationSiteVS (example)
 
 * statusReason 0..1 MS 
-  * coding MS 
+  * coding 0..1 MS 
   * text 1..1 MS
 * statusReason from https://paho.org/fhir/giis/ValueSet/NonVaccinationReasonVS (example)
 
@@ -28,7 +28,7 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
 * lotNumber 1..1 MS 
 
 * vaccineCode 1..1 MS 
-  * coding MS 
+  * coding 0..1 MS 
   * text 1..1 MS
 * vaccineCode.text ^short = "Vaccine name as text" 
 * vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code (example)

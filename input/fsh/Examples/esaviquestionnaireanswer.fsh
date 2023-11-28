@@ -170,6 +170,30 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "nombreDireccionVacunatorio"
 * item[=].item[=].item[=].text = "Full address of the institution where the vaccine was administered"
 
+// Grupos tipoVacunacion 
+
+* item[+].type = #group
+* item[=].required = true
+* item[=].repeats = false
+* item[=].linkId = "tipoVacunacion"
+* item[=].text = "Data related to a vaccination ID"
+
+* item[=].item[0].type = #integer
+* item[=].item[=].required = false
+* item[=].item[=].linkId = "vaccinationEventCalendarId"
+* item[=].item[=].text = "Id of a GIIS calendarized vaccination event"
+// * item[=].item[=].enableWhen[0].question = "vaccinationEventId"
+// * item[=].item[=].enableWhen[=].operator = #exist
+// * item[=].item[=].enableWhen[=].answerBoolean = false
+
+* item[=].item[+].type = #integer
+* item[=].item[=].required = false
+* item[=].item[=].linkId = "vaccinationEventId"
+* item[=].item[=].text = "Id of a NON calendarized GIIS vaccination event"
+// * item[=].item[=].enableWhen[0].question = "vaccinationEventCalendarId"
+// * item[=].item[=].enableWhen[=].operator = #exist
+// * item[=].item[=].enableWhen[=].answerBoolean = false
+
 /////////////////////  Grupo registroESAVI //////////////////////////////////
 * item[+].type = #group
 * item[=].required = true
