@@ -15,20 +15,6 @@ Usage: #example
 
 * item[0].linkId = "datosNotificacionGeneral"
 * item[=].text = "Administrative data for the notification"
-* item[=].item[0].linkId = "datosNotificacion"
-* item[=].item[=].text = "Data of who and where the notification is made"
-* item[=].item[=].item[0].linkId = "paisOrigen-Reg"
-* item[=].item[=].item[=].text = "Country where the register was originated"
-* item[=].item[=].item[=].answer.valueCoding = urn:iso:std:iso:3166#BS
-* item[=].item[=].item[+].linkId = "nombreOrganizacionNotificadora"
-* item[=].item[=].item[=].text = "Name of the local level institution that makes the primary notification."
-* item[=].item[=].item[=].answer.valueString = "Saint's George Hospital"
-* item[=].item[=].item[+].linkId = "nombreDireccionOrganizacion"
-* item[=].item[=].item[=].text = "Name of the Subnational Geographic Level of the Location of the Notifying Institution"
-* item[=].item[=].item[=].answer.valueString = "Saint's George Ave. 12399, BS, Bahamas"
-* item[=].item[=].item[+].linkId = "codigoProfesionNotificador"
-* item[=].item[=].item[=].text = "Notifier profession code. In this case MUST be = 6"
-* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorCS#6
 * item[=].item[+].linkId = "fechas"
 * item[=].item[=].text = "Administrative Dates (at least one date is necessary)"
 * item[=].item[=].item[0].linkId = "fechaConsulta"
@@ -104,9 +90,6 @@ Usage: #example
 * item[=].item[=].item[0].linkId = "nombreESAVI"
 * item[=].item[=].item[=].text = "ESAVI name"
 * item[=].item[=].item[=].answer.valueString = "Anafilaxia"
-* item[=].item[=].item[+].linkId = "IdentificadorESAVI"
-* item[=].item[=].item[=].text = "Correlative identifier of the ESAVI useful to refer to the event recorded in other sections of the guide"
-* item[=].item[=].item[=].answer.valueInteger = 2312
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].text = "ESAVI start date referred by the patient or identified by the physician"
 * item[=].item[=].item[=].answer.valueDate = "2020-12-23"

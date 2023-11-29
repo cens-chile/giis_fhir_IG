@@ -14,34 +14,6 @@ Usage: #example
 * item[=].text = "Administrative data for the notification"
 * item[=].required = true
 
-/////////////////////  Grupo datosNotificacion //////////////////////////////////
-* item[=].item[0].type = #group
-* item[=].item[=].required = true
-* item[=].item[=].linkId = "datosNotificacion"
-* item[=].item[=].text = "Data of who and where the notification is made"
-
-* item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/CodPaises"
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "paisOrigen-Reg"
-* item[=].item[=].item[=].text = "Country where the register was originated"
-
-* item[=].item[=].item[+].type = #string
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "nombreOrganizacionNotificadora"
-* item[=].item[=].item[=].text = "Name of the local level institution that makes the primary notification."
-
-* item[=].item[=].item[+].type = #string
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "nombreDireccionOrganizacion"
-* item[=].item[=].item[=].text = "Name of the Subnational Geographic Level of the Location of the Notifying Institution"
-
-* item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS"
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "codigoProfesionNotificador"
-* item[=].item[=].item[=].text = "Notifier profession code. In this case MUST be = 6"
-
 /////////////////////  Grupo fechas //////////////////////////////////
 * item[=].item[+].type = #group
 * item[=].item[=].required = true
@@ -68,26 +40,26 @@ Usage: #example
 * item[=].item.text = "Vaccinated patient data"
 
 * item[=].item.item[0].type = #string
-* item[=].item.item[=].required = true
+* item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "numeroCaso"
 * item[=].item.item[=].text = "UUID that identifies the case or notification. A person can have more than one notification."
 
 ////////////////////////////
 * item[=].item.item[+].type = #string
-* item[=].item.item[=].required = true
+* item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "idPaciente"
 * item[=].item.item[=].text = "UUID Identification of the person vaccinated/affected by ESAVI"
 
 ////////////////////////////////
 * item[=].item.item[+].type = #choice
 * item[=].item.item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/administrative-gender"
-* item[=].item.item[=].required = true
+* item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "sexoPaciente"
 * item[=].item.item[=].text = "Patient's gender"
 
 ////////////////
 * item[=].item.item[+].type = #date
-* item[=].item.item[=].required = true
+* item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "fechaNacimiento"
 * item[=].item.item[=].text = "Patient's birthdate"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
@@ -96,7 +68,7 @@ Usage: #example
 /////////////////////  Grupo antecedentesEnfermedadesPrevias //////////////////////////////////
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
-* item[=].item[=].repeats = true
+* item[=].item[=].repeats = false
 * item[=].item[=].linkId = "antecedentesEnfermedadesPrevias"
 * item[=].item[=].text = "History of previous illnesses" 
 
@@ -128,27 +100,27 @@ Usage: #example
 
 /////////////////////  Grupo datosVacunas //////////////////////////////////
 * item[=].item[+].type = #group
-* item[=].item[=].required = true
-* item[=].item[=].repeats = true
+* item[=].item[=].required = false
+* item[=].item[=].repeats = false
 * item[=].item[=].linkId = "datosVacunas"
 * item[=].item[=].text = "Data of the administered vaccines"
 
 //////////////nombreVacuuna OK
 * item[=].item[=].item[0].type = #string
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "nombreVacuna"
 * item[=].item[=].item[=].text = "Name of the vaccine administered"
 
 //////////////nombreVacuuna OK
 * item[=].item[=].item[+].type = #integer
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "identificadorVacuna"
 * item[=].item[=].item[=].text = "Correlative identifier of the vaccine useful to refer to the vaccine registered in other sections of the guide."
 
 /////////////////////  Grupo codigoVacunaOtro //////////////////////////////////
 
 * item[=].item[=].item[+].type = #integer
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "numeroDosisVacuna"
 * item[=].item[=].item[=].text = "Ordinal number of the administered dose"
 
@@ -212,11 +184,6 @@ Usage: #example
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "nombreESAVI"
 * item[=].item[=].item[=].text = "ESAVI name"
-
-* item[=].item[=].item[+].type = #integer
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "IdentificadorESAVI"
-* item[=].item[=].item[=].text = "Correlative identifier of the ESAVI useful to refer to the event recorded in other sections of the guide"
 
 /////////////////////
 * item[=].item[=].item[+].type = #date
