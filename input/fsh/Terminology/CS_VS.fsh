@@ -1,15 +1,5 @@
 // CODE SYSTEMS
 
-// CodeSystem: VaccineCodeCS
-// Id: VaccineCodeCS
-// Title: "Vaccines codes"
-// Description: "Codes for vaccines coming from the GIIS database"
-// * ^version = "0.1.0"
-// * ^status = #active
-// * ^date = "2023-11-07"
-// * ^content = #complete
-
-
 CodeSystem: VaccinationSiteCS
 Id: VaccinationSiteCS
 Title: "Vaccination site codes"
@@ -86,6 +76,40 @@ Description: "Codes for Health Status, these ones are just examples"
 * #14 "Liver disease"
 * #15 "Healthy"
 
+CodeSystem: BirthplaceCS 
+Id: BirthplaceCS
+Title: "Birthplace codes"
+Description: "Codes for birthplaces, these ones are just examples"
+* ^version = "0.1.0"
+* ^status = #active
+* ^date = "2023-11-07"
+* ^content = #complete
+
+* #1 "Home"
+* #2 "Hospital"
+* #3 "Health facility"
+* #6 "Health station"
+* #7 "Abroad"
+* #8 "BBA (Born Before Arrival)"
+
+CodeSystem: CommunityCS
+Id: CommunityCS
+Title: "Community codes"
+Description: "Codes for communities, these ones are just examples"
+* ^version = "0.1.0"
+* ^status = #active
+* ^date = "2023-11-07"
+* ^content = #complete
+ 
+* #3 "Dalton E Tucker"
+* #4 "East End"
+* #5 "Elliot"
+* #7 "Harrinton Sound"
+* #8 "Heron Bay"
+* #9 "Northlands" 
+* #10 "Paget"
+* #11 "Port Royal"
+
 // VALUE SETS
 
 ValueSet: VaccineCodeVS
@@ -119,8 +143,8 @@ Title: "Health Status"
 Description: "Health Status codes as momentary examples"
 * include codes from system HealthStatusCS
 
-// ValueSet: AdverseEventsVS
-// Id: AdverseEventsVS
-// Title: "ESAVI/AEFI value set"
-// Description: "Adverse events codes as momentary examples, in this case making reference to SNOMED as the CodeSystem"
-// * codes from system http://www.snomed.org/sct where concept is-a #404684003
+ValueSet: BirthplaceVS
+Id: BirthplaceVS
+Title: "Birthplace"
+Description: "Birthplace codes as momentary examples"
+* include codes from system BirthplaceCS

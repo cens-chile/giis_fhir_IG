@@ -11,16 +11,6 @@ Usage: #example
 * identifier.value = "f9a9a518-7b6f-472a-bf28-9aad7a8eeb22"
 * status = #completed
 
-//////////// datosNotificacionGeneral //////////////////
-
-* item[0].linkId = "datosNotificacionGeneral"
-* item[=].text = "Administrative data for the notification"
-* item[=].item[+].linkId = "fechas"
-* item[=].item[=].text = "Administrative Dates (at least one date is necessary)"
-* item[=].item[=].item[0].linkId = "fechaConsulta"
-* item[=].item[=].item[=].text = "Date of first consultation with the health service due to ESAVI"
-* item[=].item[=].item[=].answer.valueDate = "2020-12-23"
-
 //////////// datosIdVacunado ///////////////
 
 * item[+].linkId = "datosIdVacunado"
@@ -100,4 +90,4 @@ Usage: #example
 * item[=].item[=].text = "Determination of the severity status of ESAVI"
 * item[=].item[=].item[0].linkId = "tipoGravedad"
 * item[=].item[=].item[=].text = "Is the ESAVI Serious?"
-* item[=].item[=].item[=].answer.valueBoolean = false 
+* item[=].item[=].item[=].answer.valueString = "Mild" 

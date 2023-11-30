@@ -63,3 +63,11 @@ Description: "Extension used to handle of the lotId coming or needed for the GII
 * ^context.type = #element
 * ^context.expression = #Immunization
 * valueInteger 0..1
+
+Extension: PatientNotes
+Id: giis-patnotes
+Title: "Patient notes"
+Description: "Extension made for being able to add notes to a GIIS patient"
+* ^context.type = #element
+* ^context.expression = #Patient
+* valueString 0..1

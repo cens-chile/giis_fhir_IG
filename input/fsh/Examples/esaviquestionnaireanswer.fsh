@@ -8,27 +8,8 @@ Usage: #example
 * name = "GIIS-QuestionnaireESAVI"
 * title = "ESAVI Questionnaire for GIIS"
 
-/////////////////////  Grupo datosNotificacionGeneral  //////////////////////////
-* item[0].type = #group
-* item[=].linkId = "datosNotificacionGeneral"
-* item[=].text = "Administrative data for the notification"
-* item[=].required = true
-
-/////////////////////  Grupo fechas //////////////////////////////////
-* item[=].item[+].type = #group
-* item[=].item[=].required = true
-* item[=].item[=].linkId = "fechas"
-* item[=].item[=].text = "Administrative Dates (at least one date is necessary)"
-
-* item[=].item[=].item[0].type = #date
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "fechaConsulta"
-* item[=].item[=].item[=].text = "Date of first consultation with the health service due to ESAVI"
-* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
-* item[=].item[=].item[=].extension[=].valueDate = "2020-12-20"
-
 /////////////////////  Grupo datosVacunadoCaso //////////////////////////////////
-* item[+].type = #group
+* item[0].type = #group
 * item[=].required = true
 * item[=].linkId = "datosIdVacunado"
 * item[=].text = "Demographic data of the vaccinated that has generated an ESAVI"
@@ -204,25 +185,7 @@ Usage: #example
 * item[=].item[=].text = "Determination of the severity status of ESAVI"
 
 /////////////////////
-* item[=].item[=].item[0].type = #boolean
+* item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "tipoGravedad"
 * item[=].item[=].item[=].text = "Is the ESAVI Serious?"
-
-/////////////////////
-* item[=].item[=].item[+].type = #boolean
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "otrosEventosImportantes"
-* item[=].item[=].item[=].text = "Other Events considered Medically Important"
-* item[=].item[=].item[=].enableWhen.question = "tipoGravedad"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true
-
-/////////////////////
-* item[=].item[=].item[+].type = #string
-* item[=].item[=].item[=].repeats = true
-* item[=].item[=].item[=].linkId = "otrosEventosImportantesTx"
-* item[=].item[=].item[=].text = "Description of Other Medically Significant Events"
-* item[=].item[=].item[=].enableWhen.question = "otrosEventosImportantes"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true

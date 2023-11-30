@@ -9,9 +9,16 @@ Usage: #example
 * extension[VillageHandler].valueReference = Reference(ExampleVillage)
 
 * extension[BirthPlaceType].url = "https://paho.org/fhir/giis/StructureDefinition/giis-birthplace"
-* extension[BirthPlaceType].valueCodeableConcept.coding.system = "https://www.acme.lab/giisbirthplace"
-* extension[BirthPlaceType].valueCodeableConcept.coding.code = #hosp
+* extension[BirthPlaceType].valueCodeableConcept.coding.system = "https://paho.org/fhir/giis/CodeSystem/BirthplaceCS"
+* extension[BirthPlaceType].valueCodeableConcept.coding.code = #2
 * extension[BirthPlaceType].valueCodeableConcept.coding.display = "Hospital"
+
+* extension[CommunityType].url = "https://paho.org/fhir/giis/StructureDefinition/giis-community"
+* extension[CommunityType].valueCodeableConcept.coding.system = "https://paho.org/fhir/giis/CodeSystem/CommunityCS"
+* extension[CommunityType].valueCodeableConcept.coding.code = #3
+
+* extension[PatientNotes].url = "https://paho.org/fhir/giis/StructureDefinition/giis-patnotes"
+* extension[PatientNotes].valueString = "Patient has allergy to ibuprofen"
 
 * identifier[SystemID].system = "http://www.giisidentifier.org/ID/SystemID"
 * identifier[SystemID].value = "16399288"

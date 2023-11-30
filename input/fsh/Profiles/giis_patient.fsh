@@ -122,3 +122,6 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 
 * extension contains CommunityType named community 0..1
 * extension[community] ^short = "Extension made for handling the community of a GIIS patient, mainly for searching purposes"
+
+* extension contains PatientNotes named notes 0..1
+* extension[notes] ^short = "Extension made for being able to add notes to a GIIS patient"
