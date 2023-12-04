@@ -14,7 +14,7 @@ Title: "Campaign"
 Description: "Extension used to handle vaccination campaigns."
 * ^context.type = #element 
 * ^context.expression = #Immunization
-* valueReference only Reference(CarePlan)
+* valueReference only Reference(VaccinationCampaign)
 
 Extension: AEFIHandler
 Id: giis-aefi
@@ -30,7 +30,7 @@ Title: "Village"
 Description: "Extension used to handle village related to a patient, mainly used for searching purposes."
 * ^context.type = #element 
 * ^context.expression = #Patient
-* valueReference only Reference(Location)
+* valueReference only Reference(Village)
 
 Extension: BirthPlaceType
 Id: giis-birthplace
@@ -54,7 +54,7 @@ Title: "Vaccination Appointment"
 Description: "Extension used to be able to do a direct reference to a ImmunizationRecommendation resource from a Immunization resource"
 * ^context.type = #element 
 * ^context.expression = #Immunization
-* valueReference only Reference(ImmunizationRecommendation)
+* valueReference only Reference(VaccinationAppointment)
 
 Extension: LotIdNumber
 Id: giis-lotidnumber

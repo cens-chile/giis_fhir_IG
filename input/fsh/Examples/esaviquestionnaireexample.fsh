@@ -39,12 +39,7 @@ Usage: #example
 
 * item[+].linkId = "antecedentesFarmacosVacunas"
 * item[=].text = "Pharmacological Historys"
-* item[=].item[0].linkId = "medicamento"
-* item[=].item[=].text = "History of medications that the patient consumes at the time of ESAVI"
-* item[=].item[=].item[0].linkId = "nombreMedicamento"
-* item[=].item[=].item[=].text = "Name of the drug used concomitantly with the vaccine or relevant to ESAVI, in free text (if coded, it is the description of the code)"
-* item[=].item[=].item[=].answer.valueString = "Tylenol"
-* item[=].item[+].linkId = "datosVacunas"
+* item[=].item[0].linkId = "datosVacunas"
 * item[=].item[=].text = "Data of the administered vaccines"
 * item[=].item[=].item[0].linkId = "nombreVacuna"
 * item[=].item[=].item[=].text = "Name of the vaccine administered"
@@ -79,7 +74,8 @@ Usage: #example
 * item[=].item[=].text = "Information on ESAVI and its classification according to severity"
 * item[=].item[=].item[0].linkId = "nombreESAVI"
 * item[=].item[=].item[=].text = "ESAVI name"
-* item[=].item[=].item[=].answer.valueString = "Anafilaxia"
+* item[=].item[=].item[=].answer.valueCoding = http://acme.com/fhir/adverse-events#02
+* item[=].item[=].item[=].answer.valueCoding.display = "Fever"
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].text = "ESAVI start date referred by the patient or identified by the physician"
 * item[=].item[=].item[=].answer.valueDate = "2020-12-23"

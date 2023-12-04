@@ -65,22 +65,8 @@ Usage: #example
 * item[=].linkId = "antecedentesFarmacosVacunas"
 * item[=].text = "Pharmacological Historys"
 
-/////////////////////  Grupo medicamento //////////////////////////////////
-* item[=].item[0].type = #group
-* item[=].item[=].required = false
-* item[=].item[=].repeats = true
-* item[=].item[=].linkId = "medicamento"
-* item[=].item[=].text = "History of medications that the patient consumes at the time of ESAVI"
-
-
-//////////////////////////////////
-* item[=].item[=].item[0].type = #string
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "nombreMedicamento"
-* item[=].item[=].item[=].text = "Name of the drug used concomitantly with the vaccine or relevant to ESAVI, in free text (if coded, it is the description of the code)"
-
 /////////////////////  Grupo datosVacunas //////////////////////////////////
-* item[=].item[+].type = #group
+* item[=].item[0].type = #group
 * item[=].item[=].required = false
 * item[=].item[=].repeats = false
 * item[=].item[=].linkId = "datosVacunas"
@@ -156,13 +142,14 @@ Usage: #example
 /////////////////////  Grupo datosESAVI //////////////////////////////////
 * item[=].item[+].type = #group
 * item[=].item[=].required = true
-* item[=].item[=].repeats = true
+* item[=].item[=].repeats = false
 * item[=].item[=].linkId = "datosESAVI"
 * item[=].item[=].text = "Information on ESAVI and its classification according to severity"
 
 //////////////////////////////////
-* item[=].item[=].item[0].type = #string
+* item[=].item[=].item[0].type = #choice
 * item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].repeats = true
 * item[=].item[=].item[=].linkId = "nombreESAVI"
 * item[=].item[=].item[=].text = "ESAVI name"
 
@@ -174,7 +161,7 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #string
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "descripcionESAVI"
 * item[=].item[=].item[=].text = "Narrative description of ESAVI"
 

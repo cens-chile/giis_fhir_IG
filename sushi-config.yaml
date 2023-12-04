@@ -34,8 +34,6 @@ menu:
   Changes: changes.html
   See Also: 
     "Patient's request/response example": patient_request_response.html
-dependencies: 
-  uv.esavi: current
 pages: 
   index.md:
   objectives.md:

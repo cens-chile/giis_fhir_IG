@@ -45,4 +45,8 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
 
 //ImmunizationRecomendation reference extension
 * extension contains AppointmentHandler named appointment 1..1 MS 
-* extension[appointment] ^short = "Extension used to be able to do a direct reference to a ImmunizationRecommendation resource from a Immunization resource "
+* extension[appointment] ^short = "Extension used to be able to do a direct reference to a ImmunizationRecommendation resource from a Immunization resource"
+
+//LotId Number extension
+* extension contains LotIdNumber named lotIdNumber 0..1 MS 
+* extension[lotIdNumber] ^short = "Exttension made for handling the LotId number for the GIIS db"
