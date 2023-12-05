@@ -15,9 +15,5 @@ Description: "Bundle used to carry all the information related to a patient"
 
 * entry contains patient 1..1
         and relatedperson 0..3
-        and location 1..1
-        and organization 1..1
 * entry[patient].resource only GIISPatient
 * entry[relatedperson].resource only ChildCaretaker
-* entry[location].resource only Village
-* entry[organization].resource only HealthFacility

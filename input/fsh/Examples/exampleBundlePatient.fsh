@@ -15,13 +15,3 @@ Usage: #example
 * entry[relatedperson].resource = ExampleCaretaker
 * entry[relatedperson].request.method = #POST
 * entry[relatedperson].request.url = "RelatedPerson"
-
-* entry[location].fullUrl = "http://acme.com/ehr/fhir/Location/ExampleVillage"
-* entry[location].resource = ExampleVillage
-* entry[location].request.method = #POST
-* entry[location].request.url = "Location"
-
-* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/ExampleHealthfacility"
-* entry[organization].resource = ExampleHealthfacility
-* entry[organization].request.method = #POST
-* entry[organization].request.url = "Organization"

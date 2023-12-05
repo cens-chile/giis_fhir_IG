@@ -23,7 +23,8 @@ Usage: #example
 * identifier[SystemID].system = "http://www.giisidentifier.org/ID/SystemID"
 * identifier[SystemID].value = "16399288"
 
-* name.given = "George"
+* name.given[0] = "George"
+* name.given[+] = "Dylan" 
 * name.family = "Denver"
 
 * telecom[GIISPhone].system = #phone
@@ -43,6 +44,8 @@ Usage: #example
 * contact.name.text = "Miranda Denver"
 * contact.telecom.system = #email
 * contact.telecom.value = "mirdenver@email.com"
+
+* address.line = "25405 Gibson Lakes"
 
 * gender = #male
 

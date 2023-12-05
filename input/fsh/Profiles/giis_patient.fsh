@@ -57,7 +57,7 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 
 * name 1..1 MS
 * name.family 1..1 MS 
-* name.given 1..1 MS
+* name.given 1..2 MS
 
 * birthDate 1..1 MS
 
@@ -109,7 +109,7 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 * contact.relationship.coding.code = #N
 
 * address 0..1 MS 
-* address.city 0..1 MS 
+* address.line 0..1 MS 
 
 * managingOrganization 1..1 MS 
 * managingOrganization only Reference(HealthFacility)
