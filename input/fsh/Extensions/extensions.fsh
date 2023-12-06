@@ -7,6 +7,10 @@ Description: "Extension made for handling the health status of the patient."
 * ^context.type = #element 
 * ^context.expression = #Immunization
 * valueCodeableConcept 1..1
+* valueCodeableConcept.coding 1..1 
+* valueCodeableConcept.coding.system 1..1
+* valueCodeableConcept.coding.code 1..1
+* valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/HealthStatusVS (example)
 
 Extension: Campaign
 Id: giis-campaign
@@ -39,6 +43,10 @@ Description: "Extension used to handle the birthplace of a patient, mainly used 
 * ^context.type = #element 
 * ^context.expression = #Patient
 * valueCodeableConcept 0..1
+* valueCodeableConcept.coding 1..1 
+* valueCodeableConcept.coding.system 1..1
+* valueCodeableConcept.coding.code 1..1
+* valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/BirthplaceVS (example)
 
 Extension: CommunityType
 Id: giis-community
@@ -47,6 +55,11 @@ Description: "Extension used to handle the community of a patient"
 * ^context.type = #element 
 * ^context.expression = #Patient
 * valueCodeableConcept 0..1
+* valueCodeableConcept.coding 1..1 
+* valueCodeableConcept.coding.system 1..1
+* valueCodeableConcept.coding.code 1..1
+* valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/CommunityVS (example)
+
 
 Extension: AppointmentHandler
 Id: giis-appointment

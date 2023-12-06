@@ -115,36 +115,42 @@ Description: "Codes for communities, these ones are just examples"
 ValueSet: VaccineCodeVS
 Id: VaccineCodeVS
 Title: "Vaccine codes"
-Description: "Vaccine codes as examples"
+Description: "Vaccine codes used as examples"
 * include codes from system http://hl7.org/fhir/sid/cvx
 * include codes from system urn:oid:1.2.36.1.2001.1005.17
 
 ValueSet: VaccinationSiteVS
 Id: VaccinationSiteVS
 Title: "Vaccination body site"
-Description: "Vaccination body site codes as momentary examples"
+Description: "Vaccination body site codes used as momentary examples"
 * include codes from system VaccinationSiteCS
 
 ValueSet: VaccinationReasonVS
 Id: VaccinationReasonVS
 Title: "Vaccination reason"
-Description: "Vaccination reason codes as momentary examples"
+Description: "Vaccination reason codes used as momentary examples"
 * include codes from system VaccinationReasonCS
 
 ValueSet: NonVaccinationReasonVS
 Id: NonVaccinationReasonVS
 Title: "Non vaccination reason"
-Description: "Non vaccination reason codes as momentary examples"
+Description: "Non vaccination reason codes used as momentary examples"
 * include codes from system NonVaccinationReasonCS
 
 ValueSet: HealthStatusVS
 Id: HealthStatusVS
 Title: "Health Status"
-Description: "Health Status codes as momentary examples"
+Description: "Health Status codes used as momentary examples"
 * include codes from system HealthStatusCS
 
 ValueSet: BirthplaceVS
 Id: BirthplaceVS
 Title: "Birthplace"
-Description: "Birthplace codes as momentary examples"
+Description: "Birthplace codes used as momentary examples"
 * include codes from system BirthplaceCS
+
+ValueSet: CommunityVS
+Id: CommunityVS
+Title: "Community"
+Description: "Community codes used as momentary examples"
+* include codes from system CommunityCS

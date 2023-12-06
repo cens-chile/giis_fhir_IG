@@ -114,6 +114,8 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 * managingOrganization 1..1 MS 
 * managingOrganization only Reference(HealthFacility)
 
+* extension 1..4
+
 * extension contains VillageHandler named village 1..1 
 * extension[village] ^short = "Extension made for making a patient able to reference a village"
 

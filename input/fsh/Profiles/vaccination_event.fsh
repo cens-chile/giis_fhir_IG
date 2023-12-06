@@ -41,6 +41,8 @@ Description: "A regular vaccination event, this one is for those ones that happe
 
 * note 0..1 MS 
 
+* extension 1..4
+
 //Immunization campaign extension
 * extension contains Campaign named vaccinationCampaign 0..1 MS 
 * extension[vaccinationCampaign] ^short = "Extension made for handling Immunization Campaigns." 

@@ -34,6 +34,8 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
 * vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code (example)
 
 * note MS 
+ 
+* extension 1..4
 
 //Immunization campaign extension
 * extension contains Campaign named vaccinationCampaign 0..1 MS 
