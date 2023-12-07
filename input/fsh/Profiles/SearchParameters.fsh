@@ -75,3 +75,29 @@ Usage: #definition
 * multipleAnd = false
 * multipleOr = false
 * xpathUsage = #normal
+
+Instance: organization-giis
+InstanceOf: SearchParameter
+Usage: #definition
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-11-21T15:52:22.824+00:00"
+* meta.source = "#1713de7ffdefbac0"
+* url = "https://paho.org/fhir/giis/SearchParameter/organization-giis"
+* version = "1"
+* name = "OrganizationGIIS"
+* status = #active
+* experimental = true
+* date = "2023-10-10"
+* publisher = "Cens"
+* contact.telecom[0].system = #url
+* contact.telecom[=].value = "https://cens.cl"
+* contact.telecom[+].system = #email
+* contact.telecom[=].value = "contacto@cens.cl"
+* description = "Patient search done by the organization"
+* code = #organization-name
+* base[0] = #Patient
+* type = #reference
+* expression = "Patient.managingOrganization.resolve().name"
+* multipleAnd = false
+* multipleOr = false
+* xpathUsage = #normal
