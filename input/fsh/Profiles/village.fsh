@@ -3,8 +3,9 @@ Parent: Location
 Id: Village
 Description: "Village where a health facility is part of"
 
-* identifier 1..1
-* name 1..1
+* identifier 1..1 MS 
+  * value 1..1 MS
+* name 1..1 MS 
 
 * type 1..1 MS
 * type.coding.code 1..1 MS 
