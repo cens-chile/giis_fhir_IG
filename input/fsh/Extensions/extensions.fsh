@@ -10,6 +10,7 @@ Description: "Extension made for handling the health status of the patient."
 * valueCodeableConcept.coding 1..1 
 * valueCodeableConcept.coding.system 1..1
 * valueCodeableConcept.coding.code 1..1
+* valueCodeableConcept.text 0..1
 * valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/HealthStatusVS (example)
 
 Extension: Campaign
@@ -46,6 +47,7 @@ Description: "Extension used to handle the birthplace of a patient, mainly used 
 * valueCodeableConcept.coding 1..1 
 * valueCodeableConcept.coding.system 1..1
 * valueCodeableConcept.coding.code 1..1
+* valueCodeableConcept.text 0..1
 * valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/BirthplaceVS (example)
 
 Extension: CommunityType
@@ -58,6 +60,7 @@ Description: "Extension used to handle the community of a patient"
 * valueCodeableConcept.coding 1..1 
 * valueCodeableConcept.coding.system 1..1
 * valueCodeableConcept.coding.code 1..1
+* valueCodeableConcept.text 0..1
 * valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/CommunityVS (example)
 
 
