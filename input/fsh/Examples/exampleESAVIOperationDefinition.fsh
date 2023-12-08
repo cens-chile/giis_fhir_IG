@@ -10,16 +10,34 @@ Usage: #example
 
 * resource = #QuestionnaireResponse
 
-* name = "findEsaviByDate"
+* name = "Find ESAVI by date"
 
 * code = #find-esavi-date
 
 * system = false
 * type = true
-* instance = true
+* instance = false 
 
-* parameter.name = #QuestionnaireResponse.item.esavidate 
-* parameter.use = #out
-* parameter.min = 1
-* parameter.max = "2"
-* parameter.type = #date
+// In params
+
+* parameter[0].name = #firstDate
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].documentation = "First date of the range to search for ESAVIs"
+* parameter[=].use = #in 
+* parameter[=].type = #date 
+
+* parameter[+].name = #secondDate
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].documentation = "Second date of the range to search for ESAVIs"
+* parameter[=].use = #in 
+* parameter[=].type = #date 
+
+// Out params[+]
+* parameter[+].name = #return
+* parameter[=].min = 1
+* parameter[=].max = "*"
+* parameter[=].use = #out 
+* parameter[=].documentation = "Each QuestionnaireResponse found in the range of dates"
+* parameter[=].type = #QuestionnaireResponse

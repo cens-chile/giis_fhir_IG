@@ -24,16 +24,13 @@ Description: "Operation definition made for the searching of ESAVIs by range of 
 * type = true
 
 * instance MS
-* instance = true
+* instance = false
 
 * parameter MS 
   * name MS 
   * use MS 
-  * use = #out
   * min MS
   * min = 1
   * max MS
-  * max = "2"
   * type 1..1 MS 
-  * type = #date
 
