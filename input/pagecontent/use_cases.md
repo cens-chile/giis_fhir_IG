@@ -11,13 +11,13 @@
 
 ### Registration of a new vaccination event
 * As the title says, this use case handle the registration of a new vaccination event, this vaccination events happens outside of a child's vaccination calendar
-* The Bundle to handle this use case will be [this](Bundle-ExampleBundleVaccinationEvent.html). 
+* It will be made without a bundle, the data in the profiles should be more than enough. 
 
 ### Searching a vaccination event
-* The searching of a vaccination event will come with a [Bundle](Bundle-ExampleBundleVaccinationEvent.html) that has every necessary data, this searching will be directly linked with the patient search, due to both of them being related with each other, because there can't be an immunization event if there is no patient existance. 
+* The searching of a vaccination event will come with every necessary data, this searching will be directly linked with the patient search, due to both of them being related with each other, because there can't be an immunization event if there is no patient existance. 
 
 ### Updating a vaccination event
-* This will be made internally, due to this type of vaccination events are related to a child's vaccination callendar, the Bundle resource used to handle this will be like [this](Bundle-ExampleBundleVaccinationCalendar.html).
+* This will be made internally, due to this type of vaccination events are related to a child's vaccination callendar.
 
 ## ESAVI's use cases
 
