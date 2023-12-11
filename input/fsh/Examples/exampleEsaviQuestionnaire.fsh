@@ -94,8 +94,8 @@ Usage: #example
 ////  Grupo datosVacunacion /////////
 
 * item[=].item[+].type = #group
-* item[=].item[=].required = true
-* item[=].item[=].repeats = true
+* item[=].item[=].required = false
+* item[=].item[=].repeats = false
 * item[=].item[=].linkId = "datosVacunacion"
 * item[=].item[=].text = "Data related to the vaccination process"
 
