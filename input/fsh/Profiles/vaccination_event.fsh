@@ -23,8 +23,8 @@ Description: "A regular vaccination event, this one is for those ones that happe
 
 * vaccineCode 1..1 MS 
   * coding 0..1 MS
-    * code 1..1 
-  * text 0..1 MS
+    * code 0..1 
+  * text 1..1 MS
 * vaccineCode.text ^short = "Vaccine name as text" 
 * vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code (example)
 
