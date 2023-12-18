@@ -12,8 +12,8 @@ Inventory and cold chain are not part of this solution, however is seems worth m
 Every item in the navigation bar will be: 
 
 * [Home](index.html) is where you will find the introduction to this solution. 
-* [Context](context.html) contains the actors related to this solution, the objectives of it and it use cases. 
-* [Data model & Exchange](data_model_and_exchange.html) will contain technicall data such as transaction with a related diagram, workflow, the data dictionary and an explanation of the self generated value sets. 
+* [Context](context.html) contains the objectives of this solution and it use cases. 
+* [Data model & Exchange](data_model_and_exchange.html) will contain technicall data such as transaction with a related diagram, workflow, the data dictionary and an explanation of the inner generated value sets. 
 * [Deployments](deployments.html)will have a full explanation about how do we use SMART security and will also have the references to any other implementation guide. 
 * [Artifacts](artifacts.html) is the core of the guide, this is where you find every bundle of data, profile, example, terminology(CodeSystem/ValueSet) and extensions related to this solution. 
 * [Changes](changes.html) contains every change made to the guide. 

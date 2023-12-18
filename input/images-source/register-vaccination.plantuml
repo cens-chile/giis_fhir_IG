@@ -4,7 +4,7 @@ Participant "External Entity"  as ExternalEntity
 Participant "FHIR Facade"  as FHIRFacade
 Participant "GIIS"  as GIIS
 
-ExternalEntity -> FHIRFacade: POST Bundle (Immunization, Patient, Organization...) 
+ExternalEntity -> FHIRFacade: POST Immunization (With each reference(Patient, Organization...)) 
 FHIRFacade -> FHIRFacade: Data transformation for the API 
 FHIRFacade -> GIIS: POST <endpoint>/{immunization_data}
 GIIS --> FHIRFacade: Success

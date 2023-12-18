@@ -47,7 +47,7 @@
                 },
                 {
                     "system": "http://www.giisidentifier.org/ID/PatientSystemID",
-                    "value": "16399288"
+                    "value": "2398457298347"
                 }
                 ],
                 "name": [
@@ -81,7 +81,7 @@
                 ],
                 "managingOrganization": {
                 "reference": "Organization/ExampleHealthfacility",
-                "display": "mi organization"
+                "display": "My Organization"
                 }
             },
             "request": {
@@ -134,71 +134,10 @@
                 "method": "POST",
                 "url": "RelatedPerson"
             }
-            },
-            {
-            "fullUrl": "Location/ExampleVillage",
-            "resource": {
-                "resourceType": "Location",
-                "id": "ExampleVillage", 
-                "meta": {
-                "profile": [
-                    "https://paho.org/fhir/giis/StructureDefinition/Village"
-                ]
-                },
-                "text": {
-                "status": "generated",
-                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"ExampleVillage\"> </a></p><div style=\"display: inline-block; background-color: #D9E0E7; padding: 6px; margin: 4px; border: 1px solid #8DA1B4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;ExampleVillage&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Village.html\">Village</a></p></div><p><b>identifier</b>: id: 04</p><p><b>name</b>: Saint's George</p><p><b>type</b>: Community Location <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#COMM)</span></p></div>"
-                },
-                "identifier": [
-                {
-                    "value": "04"
-                }
-                ],
-                "name": "Saint's George",
-                "type": [
-                {
-                    "coding": [
-                    {
-                        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-                        "code": "COMM"
-                    }
-                    ]
-                }
-                ]
-            },
-            "request": {
-                "method": "POST",
-                "url": "Location"
-            }
-            },
-            { 
-            "fullUrl": "http://acme.com/ehr/fhir/Organization/ExampleHealthfacility",
-            "resource": {
-                "resourceType": "Organization",
-                "id": "ExampleHealthfacility",
-                "meta": {
-                "profile": [
-                    "https://paho.org/fhir/giis/StructureDefinition/HealthFacility"
-                ]
-                },
-                "text": {
-                "status": "generated",
-                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"ExampleHealthfacility\"> </a></p><div style=\"display: inline-block; background-color: #D9E0E7; padding: 6px; margin: 4px; border: 1px solid #8DA1B4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;ExampleHealthfacility&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-HealthFacility.html\">HealthFacility</a></p></div><p><b>identifier</b>: id: 02</p><p><b>name</b>: Saint's George Hospital</p></div>"
-                },
-                "identifier": [
-                {
-                    "value": "02"
-                }
-                ],
-                "name": "Saint's George Hospital"
-            },
-            "request": {
-                "method": "POST",
-                "url": "Organization"
-            }
             }
         ]
         }
+
 
 ### Patient Response POST
         {
@@ -224,22 +163,6 @@
                     "response": {
                         "status": "201 Created",
                         "location": "RelatedPerson/14/_history/1",
-                        "etag": "1",
-                        "lastModified": "2023-10-25T14:52:29.626+00:00"
-                    }
-                },
-                {
-                    "response": {
-                        "status": "201 Created",
-                        "location": "Location/15/_history/1",
-                        "etag": "1",
-                        "lastModified": "2023-10-25T14:52:29.626+00:00"
-                    }
-                },
-                {
-                    "response": {
-                        "status": "201 Created",
-                        "location": "Organization/16/_history/1",
                         "etag": "1",
                         "lastModified": "2023-10-25T14:52:29.626+00:00"
                     }

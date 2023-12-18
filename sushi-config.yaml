@@ -18,12 +18,11 @@ menu:
   Context: 
     "Objectives": objectives.html
     "Use cases": use_cases.html
-    "Actors": actors.html
   Data model & Exchange: 
     "Transactions": transaction.html
     "Workflow": workflow.html
     "Data Dictionary": dictionary.html
-    "Self generated Value Sets": auto_generated_VS.html
+    "Inner generated Value Sets": inner_generated_VS.html
   Deployments: 
     "SMART Security": smart.html
     "References": ig_references.html
@@ -38,11 +37,10 @@ pages:
   index.md:
   objectives.md:
   use_cases.md:
-  actors.md:
   transaction.md:
   workflow.md:
   dictionary.md:
-  auto_generated_VS.md:
+  inner_generated_VS.md:
   smart.md:
   ig_references.md:
   artifacts.html:

@@ -2,4 +2,4 @@
 * [Transactions](transaction.html)
 * [Workflow](workflow.html)
 * [Data dictionary](dictionary.html)
-* [Self generated Value Sets](auto_generated_VS.html)
+* [Inner generated Value Sets](inner_generated_VS.html)
