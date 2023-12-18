@@ -36,7 +36,7 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
 * vaccineCode.text ^short = "Vaccine name as text" 
 * vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code (example)
 
-* note MS 
+* note 0..1 MS 
  
 * extension 1..4
 
