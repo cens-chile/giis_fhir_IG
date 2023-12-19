@@ -169,3 +169,20 @@
                 }
             ]
         }
+
+### Patient request/response GET 
+
+You can ask for a patient by different searching criteria
+
+- By DB ID 
+
+        http://localhost:8080/fhir/Patient/124889
+
+- By Name 
+
+        http://localhost:8080/fhir/Patient?name=Michael 
+    > Name validates first, last name, and also any middle name if there exist
+
+And others like, village name/id, hf name/id, by address, by caretaker, and by **_identifier_**
+
+Any of this searches will respond with a **200 Status Code**, returning the whole Patient resource, with each reference.

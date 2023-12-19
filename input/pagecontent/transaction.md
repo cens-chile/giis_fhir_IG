@@ -37,7 +37,7 @@ The FHIR Facade respond with a **201 Status Code**, meaning that the data was st
 
 #### Example Request/Response 
 
-You can see an example of a request and response of this post [HERE](patient_request_response.html)
+You can see an example of a request and response of every operation [HERE](patient_request_response.html)
 
 ### Searching of a patient
 
@@ -67,8 +67,6 @@ If there is any type of error, there will be a **40X Status Code** or a **500 St
 server type of error.
 If there's a request for any of the two type of searches, it should return the same example bundle linked above.
 
-#### Example Request/Response
-
 ### Registration of a new vaccination event/updating a vaccination event
 
 The external entity will **POST** a Bundle resource in order to either register a new vaccination event or updating an existing one. Then the FHIR Facade will transform the data to query it into the GIIS. The updating of the data is handled internally on GIIS, so this [example](Immunization-ExampleVaccinationEvent.html) works just fine for both registering or updating a vaccination event. 
@@ -91,7 +89,6 @@ There will be two cases:
 
 The response, for both cases, will be a **201 Status Code**. If there is any type of error on the data, there will be a **40X Status Code** or a **500 Status Code** meaning that there is a server type of error.
 
-#### Example Request/Response
 
 ### Searching a vaccination event
 
@@ -114,6 +111,8 @@ The FHIR Facade will respond with a **200 Status Code** with all the data that c
 
 #### Example Request/Response
 
+You can see an example of a request and response of every operation [HERE](ve_request_response.html)
+
 ### Registration of an ESAVI 
 
 The ESAVI registration will be made over a QuestionnaireResponse resource. This is made by **reference** on the ESAVI IG (to see more about it [click here](ig_references.html)) but was modified with the minimal set of data required in the case of the GIIS, plus some changes of cardinalities in order to get a better solution. 
@@ -133,8 +132,6 @@ The external entity issues an HTTP **POST** type of operation by sending the dat
 
 The FHIR facade response will be a **201 Status Code** if everything goes well. Otherwise there will be a **40X Status Code** or a **500 Status Code** meaning that there is a server type of error.
 
-#### Example Request/Response
-
 ### Updating an ESAVI 
 
 This time the QuestionnaireResponse resource will have a Patient linked to it, so firstly, this Patient has to have an existing ESAVI. 
@@ -151,8 +148,6 @@ The external entity issues an HTTP **PUT** type of operation by sending any data
 #### Response
 
 The FHIR facade response, will be a **201 Status Code** if everything goes well. Otherwise there will be a **40X Status Code** or a **500 Status Code** meaning that there is a server type of error.
-
-#### Example Request/Response
 
 ### Searching an ESAVI 
 
@@ -172,3 +167,5 @@ The FHIR facade response will be a **200 Status Code** if everything goes well, 
 If the response is not a **200 Status Code** there will be a **40X Status Code** or a **500 Status Code** meaning that there is a server type of error.
 
 #### Example Request/Response
+
+You can see an example of a request and response of every operation [HERE](esavi_request_response.html)

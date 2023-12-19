@@ -1,4 +1,3 @@
-* [Actors](actors.html)
 * [Transactions](transaction.html)
 * [Workflow](workflow.html)
 * [Data dictionary](dictionary.html)

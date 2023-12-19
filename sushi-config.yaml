@@ -27,12 +27,11 @@ menu:
     "SMART Security": smart.html
     "References": ig_references.html
   Artifacts: artifacts.html
-  # Testing: 
-  #   "Postman collection": postman_collection.html
-  #   "Test server": test_server.html
   Changes: changes.html
   See Also: 
     "Patient's request/response example": patient_request_response.html
+    "Vaccination event's request/response example": ve_request_response.html
+    "ESAVI's request/response example": esavi_request_response.html
 pages: 
   index.md:
   objectives.md:
@@ -46,6 +45,8 @@ pages:
   artifacts.html:
   changes.md:
   patient_request_response.md:
+  ve_request_response.md: 
+  esavi_request_response.md:
   context.md:
   data_model_and_exchange.md:
   deployments.md: 
