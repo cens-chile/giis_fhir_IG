@@ -15,7 +15,7 @@ Description: "Operation definition made for the searching of ESAVIs by range of 
 * resource = #QuestionnaireResponse 
 
 * code MS 
-* code = #find-esavi-date
+* code = #find-esavi-by-date
 
 * system MS 
 * system = false
@@ -28,6 +28,7 @@ Description: "Operation definition made for the searching of ESAVIs by range of 
 
 * parameter MS 
   * name MS 
+  * name ^short = "Use #start for the first date and #end for the second one "
   * use MS 
   * min MS
   * min = 1

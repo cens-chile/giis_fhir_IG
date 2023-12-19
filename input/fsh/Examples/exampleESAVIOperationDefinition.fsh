@@ -12,7 +12,7 @@ Usage: #example
 
 * name = "Find ESAVI by date"
 
-* code = #find-esavi-date
+* code = #find-esavi-by-date
 
 * system = false
 * type = true
@@ -20,14 +20,14 @@ Usage: #example
 
 // In params
 
-* parameter[0].name = #firstDate
+* parameter[0].name = #start
 * parameter[=].min = 1
 * parameter[=].max = "1"
 * parameter[=].documentation = "First date of the range to search for ESAVIs"
 * parameter[=].use = #in 
 * parameter[=].type = #date 
 
-* parameter[+].name = #secondDate
+* parameter[+].name = #end
 * parameter[=].min = 1
 * parameter[=].max = "1"
 * parameter[=].documentation = "Second date of the range to search for ESAVIs"
