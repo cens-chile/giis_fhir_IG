@@ -1,5 +1,12 @@
 ### Vaccination Event Request POST/PUT
 
+The request will look like this: 
+
+        POST/PUT http://localhost:8080/fhir/Immunization/
+
+
+And the body will look like this:
+
         {
             "resourceType" : "Immunization",
             "id" : "ExampleVaccinationEvent",
