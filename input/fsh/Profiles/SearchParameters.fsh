@@ -101,3 +101,55 @@ Usage: #definition
 * multipleAnd = false
 * multipleOr = false
 * xpathUsage = #normal
+
+Instance: vaccination-appointment
+InstanceOf: SearchParameter
+Usage: #definition
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-11-21T15:52:22.824+00:00"
+* meta.source = "#1713de7ffdefbac0"
+* url = "https://paho.org/fhir/giis/SearchParameter/vaccination-appointment"
+* version = "1"
+* name = "VaccinationAppointmentGIIS"
+* status = #active
+* experimental = true
+* date = "2023-10-10"
+* publisher = "Cens"
+* contact.telecom[0].system = #url
+* contact.telecom[=].value = "https://cens.cl"
+* contact.telecom[+].system = #email
+* contact.telecom[=].value = "contacto@cens.cl"
+* description = "Immunization search done by the vaccination appointment"
+* code = #vaccination-appointment
+* base[0] = #Immunization
+* type = #reference
+* expression = "Immunization.extension('https://paho.org/fhir/giis/StructureDefinition/giis-appointment')"
+* multipleAnd = false
+* multipleOr = false
+* xpathUsage = #normal
+
+Instance: patient-identifier
+InstanceOf: SearchParameter
+Usage: #definition
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-11-21T15:52:22.824+00:00"
+* meta.source = "#1713de7ffdefbac0"
+* url = "https://paho.org/fhir/giis/SearchParameter/patient-identifier"
+* version = "1"
+* name = "BirthplaceGIIS"
+* status = #active
+* experimental = true
+* date = "2023-10-10"
+* publisher = "Cens"
+* contact.telecom[0].system = #url
+* contact.telecom[=].value = "https://cens.cl"
+* contact.telecom[+].system = #email
+* contact.telecom[=].value = "contacto@cens.cl"
+* description = "Immunization search done by the patient identifier"
+* code = #patient-identifier
+* base[0] = #Immunization
+* type = #token
+* expression = "Immunization.patient.resolve().identifier"
+* multipleAnd = false
+* multipleOr = false
+* xpathUsage = #normal
