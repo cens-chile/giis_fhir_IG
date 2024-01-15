@@ -38,7 +38,7 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
     * code 1..1 MS  
   * text 0..1 MS
 * vaccineCode.text ^short = "Vaccine name as text" 
-* vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code (example)
+* vaccineCode from https://paho.org/fhir/giis/ValueSet/VaccineCodeVS (example)
 
 * note 0..1 MS 
  
