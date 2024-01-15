@@ -1,37 +1,46 @@
-Profile: ESAVIOperationDefinition 
-Parent: OperationDefinition
-Id: ESAVIOperationDefinition
+Instance: ESAVIOperationDefinition 
+InstanceOf: OperationDefinition
+Usage: #definition
 Description: "Operation definition made for the searching of ESAVIs by range of date"
  
-* status MS 
 * status = #draft
 
-* name MS 
+* name = "ESAVIOperationDefinition"
 
-* kind MS
+* title = "ESAVI Operation Definition"
+ 
 * kind = #operation
 
-* resource 1..1 MS
 * resource = #QuestionnaireResponse 
-
-* code MS 
+ 
 * code = #find-esavi-by-date
-
-* system MS 
+ 
 * system = false
 
-* type MS 
 * type = true
 
-* instance MS
 * instance = false
 
-* parameter MS 
-  * name MS 
-  * name ^short = "Use #start for the first date and #end for the second one "
-  * use MS 
-  * min MS
-  * min = 1
-  * max MS
-  * type 1..1 MS 
+// In params
 
+* parameter[0].name = #start
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].documentation = "First date of the range to search for ESAVIs"
+* parameter[=].use = #in 
+* parameter[=].type = #date 
+
+* parameter[+].name = #end
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].documentation = "Second date of the range to search for ESAVIs"
+* parameter[=].use = #in 
+* parameter[=].type = #date 
+
+// Out params[+]
+* parameter[+].name = #return
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].use = #out 
+* parameter[=].documentation = "Each QuestionnaireResponse found in the range of dates"
+* parameter[=].type = #Bundle
