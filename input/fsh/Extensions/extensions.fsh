@@ -6,11 +6,14 @@ Title: "Health Status"
 Description: "Extension made for handling the health status of the patient."
 * ^context.type = #element 
 * ^context.expression = #Immunization
+* value[x] only CodeableConcept
+* value[x] ^short = "Health status of the patient prior the immunization"
+* url 1..1 MS 
 * valueCodeableConcept 1..1
-* valueCodeableConcept.coding 1..1 
-* valueCodeableConcept.coding.system 1..1
-* valueCodeableConcept.coding.code 1..1
-* valueCodeableConcept.text 0..1
+* valueCodeableConcept.coding 0..1 MS
+  * system 1..1 MS 
+  * code 1..1 MS 
+* valueCodeableConcept.text 0..1 MS 
 * valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/HealthStatusVS (example)
 
 Extension: Campaign
@@ -43,11 +46,14 @@ Title: "Birthplace"
 Description: "Extension used to handle the birthplace of a patient, mainly used for searching purposes."
 * ^context.type = #element 
 * ^context.expression = #Patient
-* valueCodeableConcept 0..1
-* valueCodeableConcept.coding 1..1 
-* valueCodeableConcept.coding.system 1..1
-* valueCodeableConcept.coding.code 1..1
-* valueCodeableConcept.text 0..1
+* value[x] only CodeableConcept
+* value[x] ^short = "Birthplace of a patient"
+* url 1..1 MS 
+* valueCodeableConcept 0..1 MS 
+* valueCodeableConcept.coding 0..1 MS
+  * system 1..1 MS 
+  * code 1..1 MS 
+* valueCodeableConcept.text 0..1 MS 
 * valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/BirthplaceVS (example)
 
 Extension: CommunityType
@@ -56,11 +62,14 @@ Title: "Community"
 Description: "Extension used to handle the community of a patient"
 * ^context.type = #element 
 * ^context.expression = #Patient
-* valueCodeableConcept 0..1
-* valueCodeableConcept.coding 1..1 
-* valueCodeableConcept.coding.system 1..1
-* valueCodeableConcept.coding.code 1..1
-* valueCodeableConcept.text 0..1
+* value[x] only CodeableConcept
+* value[x] ^short = "Community of a patient"
+* url 1..1 MS 
+* valueCodeableConcept 0..1 MS 
+* valueCodeableConcept.coding 1..1 MS  
+  * system 1..1 MS
+  * code 1..1 MS
+* valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/CommunityVS (example)
 
 

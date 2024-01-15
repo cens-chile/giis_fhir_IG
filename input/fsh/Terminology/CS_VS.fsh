@@ -110,14 +110,59 @@ Description: "Codes for communities, these ones are just examples"
 * #10 "Paget"
 * #11 "Port Royal"
 
+CodeSystem: VaccineCodeCS
+Id: VaccineCodeCS
+Title: "Vaccine codes"
+Description: "Codes for vaccines coming from a certain table (Item) from the GIIS"
+* ^version = "0.1.0"
+* ^status = #active
+* ^date = "2024-01-15"
+* ^content = #complete
+
+* #1 "adenovirus vaccine"
+* #2 "anthrax vaccine"
+* #3 "hepatitis A vaccine"
+* #4 "hepatitis B vaccine"
+* #5 "hepatitis C vaccine"
+* #6 "hepatitis E vaccine"
+* #7 "influenza virus vaccine"
+* #8 "rotavirus vaccine"
+* #9 "yellow fever vaccine"
+* #0 "Other"
+
+CodeSystem: OtherVaccineCodeCS
+Id: OtherVaccineCodeCS
+Title: "Other Vaccine codes"
+Description: "Codes for vaccines coming from a certain table (OtherVaccines) from the GIIS"
+* ^version = "0.1.0"
+* ^status = #active
+* ^date = "2024-01-15"
+* ^content = #complete
+
+* #1 "adenovirus vaccine"
+* #2 "dengue fever vaccine"
+* #3 "hepatitis A vaccine"
+* #4 "hepatitis B vaccine"
+* #5 "hepatitis C vaccine"
+* #6 "hepatitis E vaccine"
+* #7 "influenza virus vaccine"
+* #8 "rotavirus vaccine"
+* #9 "hantavirus vaccine"
+* #0 "Other"
+
 // VALUE SETS
 
 ValueSet: VaccineCodeVS
 Id: VaccineCodeVS
 Title: "Vaccine codes"
 Description: "Vaccine codes used as examples"
-* include codes from system http://hl7.org/fhir/sid/cvx
-* include codes from system urn:oid:1.2.36.1.2001.1005.17
+* include codes from system VaccineCodeCS
+
+ValueSet: OtherVaccineCodeVS
+Id: OtherVaccineCodeVS
+Title: "Other Vaccine codes"
+Description: "Other Vaccine codes used as examples, these ones come from another table from the GIIS"
+* include codes from system OtherVaccineCodeCS
 
 ValueSet: VaccinationSiteVS
 Id: VaccinationSiteVS
