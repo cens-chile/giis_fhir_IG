@@ -22,9 +22,7 @@ Usage: #example
 * lotNumber = "all231"
 
 * vaccineCode.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccineCodeCS"
-* vaccineCode.coding.code = #24
-* vaccineCode.coding.display = "anthrax vaccine"
-* vaccineCode.text = "anthrax vaccine"
+* vaccineCode.coding.code = #2
 
 * site.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS"
 * site.coding.code = #1
