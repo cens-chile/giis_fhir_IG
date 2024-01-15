@@ -150,6 +150,24 @@ Description: "Codes for vaccines coming from a certain table (OtherVaccines) fro
 * #9 "hantavirus vaccine"
 * #0 "Other"
 
+CodeSystem: AEFISeverityCS
+Id: AEFISeverityCS
+Title: "Adverse Event severity codes"
+Description: "Codes for adverse events severity"
+* #1 "Severe" 
+* #2 "Mild"
+* #3 "Moderate"
+
+CodeSystem: AEFINameCS
+Id: AEFINameCS
+Title: "Adverse Event codes"
+Description: "Codes for adverse events"
+* #1 "Headache" 
+* #2 "Sore throath"
+* #3 "Nausea"
+* #4 "Fever"
+* #5 "Other"
+
 // VALUE SETS
 
 ValueSet: VaccineCodeVS
@@ -163,6 +181,18 @@ Id: OtherVaccineCodeVS
 Title: "Other Vaccine codes"
 Description: "Other Vaccine codes used as examples, these ones come from another table from the GIIS"
 * include codes from system OtherVaccineCodeCS
+
+ValueSet: AEFINameVS
+Id: AEFINameVS
+Title: "Adverse Event codes"
+Description: "Codes for adverse events used as examples"
+* include codes from system AEFINameCS
+
+ValueSet: AEFISeverityVS
+Id: AEFISeverityVS
+Title: "Adverse Event severity codes"
+Description: "Codes for adverse events severity used as examples"
+* include codes from system AEFISeverityCS
 
 ValueSet: VaccinationSiteVS
 Id: VaccinationSiteVS
