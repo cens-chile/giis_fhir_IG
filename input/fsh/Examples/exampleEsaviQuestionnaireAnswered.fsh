@@ -1,5 +1,5 @@
-Instance: ExampleESAVIQuestionnaire-1
-Title: "Example ESAVI Questionnaire "
+Instance: ExampleESAVIQuestionnaireResponse
+Title: "Example ESAVI QuestionnaireResponse"
 Description: "Example of an answered ESAVI Questionnaire"
 InstanceOf: EsaviQuestionnaireResponse
 Usage: #example
@@ -74,7 +74,7 @@ Usage: #example
 * item[=].item[=].text = "Information on ESAVI and its classification according to severity"
 * item[=].item[=].item[0].linkId = "nombreESAVI"
 * item[=].item[=].item[=].text = "ESAVI name"
-* item[=].item[=].item[=].answer.valueCoding = http://acme.com/fhir/adverse-events#02
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/AEFINameCodeCSs#1
 * item[=].item[=].item[=].answer.valueCoding.display = "Fever"
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].text = "ESAVI start date referred by the patient or identified by the physician"
@@ -86,4 +86,5 @@ Usage: #example
 * item[=].item[=].text = "Determination of the severity status of ESAVI"
 * item[=].item[=].item[0].linkId = "tipoGravedad"
 * item[=].item[=].item[=].text = "Is the ESAVI Serious?"
-* item[=].item[=].item[=].answer.valueString = "Mild" 
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/AEFISeverityCS#2
+* item[=].item[=].item[=].answer.valueCoding.display = "Mild"

@@ -172,7 +172,7 @@ Usage: #example
 * item[=].item[=].text = "Determination of the severity status of ESAVI"
 
 /////////////////////
-* item[=].item[=].item[0].type = #string
+* item[=].item[=].item[0].type = #choice
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "tipoGravedad"
 * item[=].item[=].item[=].text = "Is the ESAVI Serious?"
