@@ -74,7 +74,7 @@ Usage: #example
 * item[=].item[=].text = "Information on ESAVI and its classification according to severity"
 * item[=].item[=].item[0].linkId = "nombreESAVI"
 * item[=].item[=].item[=].text = "ESAVI name"
-* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/AEFINameCodeCSs#1
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/AEFINameCS#1
 * item[=].item[=].item[=].answer.valueCoding.display = "Fever"
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].text = "ESAVI start date referred by the patient or identified by the physician"

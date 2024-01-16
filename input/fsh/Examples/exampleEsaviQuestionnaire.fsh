@@ -151,6 +151,7 @@ Usage: #example
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].repeats = true
 * item[=].item[=].item[=].linkId = "nombreESAVI"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/giis/ValueSet/AEFINameVS"
 * item[=].item[=].item[=].text = "ESAVI name"
 
 /////////////////////
@@ -174,5 +175,6 @@ Usage: #example
 /////////////////////
 * item[=].item[=].item[0].type = #choice
 * item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/giis/ValueSet/AEFISeverityVS"
 * item[=].item[=].item[=].linkId = "tipoGravedad"
 * item[=].item[=].item[=].text = "Is the ESAVI Serious?"
