@@ -24,10 +24,10 @@
 ### Registration of a ESAVI related to a patient/vaccination event
 
 * It will be through answering a questionnaire resource.
-* You can see an example of an answered questionnaire [here](QuestionnaireResponse-ExampleESAVIQuestionnaire-1.html). 
+* You can see an example of an answered questionnaire [here](QuestionnaireResponse-ExampleESAVIQuestionnaireResponse.html). 
 
 ### Searching an ESAVI 
-* The searching of an ESAVI will return an aswered questionnaire, just like [this one](QuestionnaireResponse-ExampleESAVIQuestionnaire-1.html). 
+* The searching of an ESAVI will return an aswered questionnaire, just like [this one](QuestionnaireResponse-ExampleESAVIQuestionnaireResponse.html). 
 
 ### Updating an ESAVI
 * Updating an ESAVI will retun an answered questionnaire that it will updated. This updated questionnaire can have some usefull data added to it, like some phamalogical history or even the update of a previously answered data. 

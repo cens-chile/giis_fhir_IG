@@ -117,7 +117,7 @@ You can see an example of a request and response of every operation [HERE](ve_re
 
 The ESAVI registration will be made over a QuestionnaireResponse resource. This is made by **reference** on the ESAVI IG (to see more about it [click here](ig_references.html)) but was modified with the minimal set of data required in the case of the GIIS, plus some changes of cardinalities in order to get a better solution. 
 
-The external entity will send the data, this time on a QuestionnaireResponse type of resource (see the example of an answered QuestionnaireResponse [here](QuestionnaireResponse-ExampleESAVIQuestionnaire-1.html)) rather than a Bundle resource and the FHIR Facade will make the INSERT directly into the GIIS database.  
+The external entity will send the data, this time on a QuestionnaireResponse type of resource (see the example of an answered QuestionnaireResponse [here](QuestionnaireResponse-ExampleESAVIQuestionnaireResponse.html)) rather than a Bundle resource and the FHIR Facade will make the INSERT directly into the GIIS database.  
  
 <div>
 {% include register-esavi.svg %}
