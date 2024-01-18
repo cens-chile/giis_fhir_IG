@@ -171,7 +171,7 @@ Usage: #definition
 * contact.telecom[=].value = "https://cens.cl"
 * contact.telecom[+].system = #email
 * contact.telecom[=].value = "contacto@cens.cl"
-* description = "Immunization search done by the patient identifier"
+* description = "CarePlan search by title"
 * code = #title
 * base[0] = #CarePlan
 * type = #string
