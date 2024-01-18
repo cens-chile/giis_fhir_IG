@@ -136,7 +136,7 @@ Usage: #definition
 * meta.source = "#1713de7ffdefbac0"
 * url = "https://paho.org/fhir/giis/SearchParameter/patient-identifier"
 * version = "1"
-* name = "BirthplaceGIIS"
+* name = "PatientIdentifier"
 * status = #active
 * experimental = true
 * date = "2023-10-10"
@@ -150,6 +150,32 @@ Usage: #definition
 * base[0] = #Immunization
 * type = #token
 * expression = "Immunization.patient.resolve().identifier"
+* multipleAnd = false
+* multipleOr = false
+* xpathUsage = #normal
+
+Instance: careplan-title
+InstanceOf: SearchParameter
+Usage: #definition
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-11-21T15:52:22.824+00:00"
+* meta.source = "#1713de7ffdefbac0"
+* url = "https://paho.org/fhir/giis/SearchParameter/careplan-title"
+* version = "1"
+* name = "CarePlanTitle"
+* status = #active
+* experimental = true
+* date = "2023-10-10"
+* publisher = "Cens"
+* contact.telecom[0].system = #url
+* contact.telecom[=].value = "https://cens.cl"
+* contact.telecom[+].system = #email
+* contact.telecom[=].value = "contacto@cens.cl"
+* description = "Immunization search done by the patient identifier"
+* code = #title
+* base[0] = #CarePlan
+* type = #string
+* expression = "CarePlan.title"
 * multipleAnd = false
 * multipleOr = false
 * xpathUsage = #normal
