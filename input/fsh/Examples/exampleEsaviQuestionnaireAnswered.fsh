@@ -10,6 +10,7 @@ Usage: #example
 
 * identifier.value = "f9a9a518-7b6f-472a-bf28-9aad7a8eeb22"
 * status = #completed
+* questionnaire = Canonical(ESAVIQuestionnaire)
 
 //////////// datosIdVacunado ///////////////
 
@@ -74,7 +75,7 @@ Usage: #example
 * item[=].item[=].text = "Information on ESAVI and its classification according to severity"
 * item[=].item[=].item[0].linkId = "nombreESAVI"
 * item[=].item[=].item[=].text = "ESAVI name"
-* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/AEFINameCS#1
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/AEFINameCS#4
 * item[=].item[=].item[=].answer.valueCoding.display = "Fever"
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].text = "ESAVI start date referred by the patient or identified by the physician"
@@ -82,6 +83,9 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "descripcionESAVI"
 * item[=].item[=].item[=].text = "Narrative description of ESAVI"
 * item[=].item[=].item[=].answer.valueString = "Post vaccination Anafilaxia"
+* item[=].item[=].item[+].linkId = "esaviPatientHealthStatus"
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/AEFIPatientStatusCS#2
+* item[=].item[=].item[=].answer.valueCoding.display = "Following"
 * item[=].item[+].linkId = "gravedadESAVI"
 * item[=].item[=].text = "Determination of the severity status of ESAVI"
 * item[=].item[=].item[0].linkId = "tipoGravedad"

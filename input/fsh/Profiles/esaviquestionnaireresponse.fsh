@@ -9,10 +9,11 @@ Description: "QuestionnaireResponse used to handle the ESAVI questionnaire for G
 * status MS 
 * status ^definition = "The status MUST be marked as completed or in-progress."
 * status from http://hl7.org/fhir/ValueSet/questionnaire-answers-status
-* status ^binding.description = "Use in-progress | completed"
+* status ^binding.description = "Use completed"
+* status = #completed
 
 * questionnaire 0..1 MS 
-* questionnaire = "https://paho.org/fhir/giis/Questionnaire/ESAVIQuestionnaire"
+* questionnaire = Canonical(ESAVIQuestionnaire)
 
 * item 1..* MS 
 * item ^short = "Groups, subgroups and questions to be answered based on the Questionnaire."

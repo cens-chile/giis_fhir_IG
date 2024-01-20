@@ -168,6 +168,14 @@ Description: "Codes for adverse events"
 * #4 "Fever"
 * #5 "Other"
 
+CodeSystem: AEFIPatientStatusCS
+Id: AEFIPatientStatusCS
+Title: "Patient Status related to an AEFI codes"
+Description: "Patient Status related to an AEFI codes"
+* #1 "Recovered"
+* #2 "Following"
+* #3 "Dead"
+
 // VALUE SETS
 
 ValueSet: VaccineCodeVS
@@ -193,6 +201,12 @@ Id: AEFISeverityVS
 Title: "Adverse Event severity codes"
 Description: "Codes for adverse events severity used as examples"
 * include codes from system AEFISeverityCS
+
+ValueSet: AEFIPatientStatusVS
+Id: AEFIPatientStatusVS
+Title: "Patient Status related to an AEFI codes"
+Description: "Patient Status related to an AEFI codes"
+* include codes from system AEFIPatientStatusCS
 
 ValueSet: VaccinationSiteVS
 Id: VaccinationSiteVS
