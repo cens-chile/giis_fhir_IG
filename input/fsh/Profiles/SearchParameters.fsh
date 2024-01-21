@@ -179,3 +179,29 @@ Usage: #definition
 * multipleAnd = false
 * multipleOr = false
 * xpathUsage = #normal
+
+Instance: vaccine-name
+InstanceOf: SearchParameter
+Usage: #definition
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-11-21T15:52:22.824+00:00"
+* meta.source = "#1713de7ffdefbac0"
+* url = "https://paho.org/fhir/giis/SearchParameter/vaccine-name"
+* version = "1"
+* name = "VaccineName"
+* status = #active
+* experimental = true
+* date = "2023-10-10"
+* publisher = "Cens"
+* contact.telecom[0].system = #url
+* contact.telecom[=].value = "https://cens.cl"
+* contact.telecom[+].system = #email
+* contact.telecom[=].value = "contacto@cens.cl"
+* description = "Vaccine Name search in ItemLot"
+* code = #vaccine-name
+* base[0] = #Basic
+* type = #token
+* expression = "Basic.extension('https://paho.org/fhir/giis/StructureDefinition/giis-item-vaccine')"
+* multipleAnd = false
+* multipleOr = false
+* xpathUsage = #normal

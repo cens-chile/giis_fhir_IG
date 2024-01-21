@@ -169,7 +169,7 @@ Usage: #example
 /////////////////////
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "esaviPatientHealthStatus"
+* item[=].item[=].item[=].linkId = "estadoPacienteESAVI"
 * item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/giis/ValueSet/AEFIPatientStatusVS"
 * item[=].item[=].item[=].text = "Health status of the patient related with this ESAVI event"
 

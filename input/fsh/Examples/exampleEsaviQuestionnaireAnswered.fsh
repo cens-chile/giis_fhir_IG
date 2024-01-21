@@ -83,7 +83,7 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "descripcionESAVI"
 * item[=].item[=].item[=].text = "Narrative description of ESAVI"
 * item[=].item[=].item[=].answer.valueString = "Post vaccination Anafilaxia"
-* item[=].item[=].item[+].linkId = "esaviPatientHealthStatus"
+* item[=].item[=].item[+].linkId = "estadoPacienteESAVI"
 * item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/AEFIPatientStatusCS#2
 * item[=].item[=].item[=].answer.valueCoding.display = "Following"
 * item[=].item[+].linkId = "gravedadESAVI"

@@ -96,3 +96,19 @@ Description: "Extension made for being able to add notes to a GIIS patient"
 * ^context.type = #element
 * ^context.expression = #Patient
 * valueString 0..1
+
+Extension: ItemVaccine
+Id: giis-item-vaccine
+Title: "Item Vaccine"
+Description: "Extension used to handle the Item Vaccine"
+* ^context.type = #element 
+* ^context.expression = #Basic
+* value[x] only CodeableConcept
+* value[x] ^short = "Item Vaccine"
+* url 1..1 MS 
+* valueCodeableConcept 0..1 MS 
+* valueCodeableConcept.coding 1..1 MS  
+  * system 1..1 MS
+  * code 1..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/VaccineCodeVS (example)
