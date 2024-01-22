@@ -205,3 +205,57 @@ Usage: #definition
 * multipleAnd = false
 * multipleOr = false
 * xpathUsage = #normal
+
+// Crear SP Caretaker name.family & name.given como type = #string 
+
+Instance: caretaker-firstname
+InstanceOf: SearchParameter
+Usage: #definition
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-11-21T15:52:22.824+00:00"
+* meta.source = "#1713de7ffdefbac0"
+* url = "https://paho.org/fhir/giis/SearchParameter/caretaker-firstname"
+* version = "1"
+* name = "CaretakerFirstName"
+* status = #active
+* experimental = true
+* date = "2023-10-10"
+* publisher = "Cens"
+* contact.telecom[0].system = #url
+* contact.telecom[=].value = "https://cens.cl"
+* contact.telecom[+].system = #email
+* contact.telecom[=].value = "contacto@cens.cl"
+* description = "Caretaker search by first name"
+* code = #caretaker-firstname
+* base[0] = #RelatedPerson
+* type = #string
+* expression = "RelatedPerson.name.given"
+* multipleAnd = false
+* multipleOr = false
+* xpathUsage = #normal
+
+Instance: caretaker-lastname
+InstanceOf: SearchParameter
+Usage: #definition
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-11-21T15:52:22.824+00:00"
+* meta.source = "#1713de7ffdefbac0"
+* url = "https://paho.org/fhir/giis/SearchParameter/caretaker-lastname"
+* version = "1"
+* name = "CaretakerLastName"
+* status = #active
+* experimental = true
+* date = "2023-10-10"
+* publisher = "Cens"
+* contact.telecom[0].system = #url
+* contact.telecom[=].value = "https://cens.cl"
+* contact.telecom[+].system = #email
+* contact.telecom[=].value = "contacto@cens.cl"
+* description = "Caretaker search by last name"
+* code = #caretaker-lastname
+* base[0] = #RelatedPerson
+* type = #string
+* expression = "RelatedPerson.name.family"
+* multipleAnd = false
+* multipleOr = false
+* xpathUsage = #normal
