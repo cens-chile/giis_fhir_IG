@@ -1,7 +1,7 @@
 // CODE SYSTEMS
 
-CodeSystem: VaccineSiteCS 
-Id: VaccineSiteCS 
+CodeSystem: VaccinationSiteCS 
+Id: VaccinationSiteCS 
 Title: "Vaccination site codes"
 Description: "Codes for vaccination sites, these ones are just examples"
 * ^version = "0.1.0"
@@ -212,7 +212,7 @@ ValueSet: VaccinationSiteVS
 Id: VaccinationSiteVS
 Title: "Vaccination body site"
 Description: "Vaccination body site codes used as momentary examples"
-* include codes from system VaccineSiteCS 
+* include codes from system VaccinationSiteCS 
 
 ValueSet: VaccinationReasonVS
 Id: VaccinationReasonVS
