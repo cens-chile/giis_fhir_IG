@@ -30,10 +30,10 @@ Usage: #example
 * reasonCode.text = "Travel consult"
 
 
-* vaccineCode.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccineCodeCS"
+* vaccineCode.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccineCS"
 * vaccineCode.coding.code = #2
 
-* site.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS"
+* site.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccineSiteCS "
 * site.coding.code = #1
 * site.coding.display = "Left Arm"
 * site.text = "Left Arm"

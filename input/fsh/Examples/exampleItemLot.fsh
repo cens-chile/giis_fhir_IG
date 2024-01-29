@@ -8,6 +8,6 @@ Usage: #example
 * identifier.system = "http://www.giisidentifier.org/ID/ItemLot"
 * code.text = "Item Lot"
 * extension[ItemVaccine].url = "https://paho.org/fhir/giis/StructureDefinition/giis-item-vaccine"
-* extension[ItemVaccine].valueCodeableConcept.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccineCodeCS"
+* extension[ItemVaccine].valueCodeableConcept.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccineCS"
 * extension[ItemVaccine].valueCodeableConcept.coding.code = #1
 * extension[ItemVaccine].valueCodeableConcept.coding.display = "adenovirus vaccine"

@@ -15,7 +15,7 @@ And the body will look like this:
             },
             "text" : {
             "status" : "extensions",
-            "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Immunization</b><a name=\"ExampleVaccinationEvent\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Immunization &quot;ExampleVaccinationEvent&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VaccinationEvent.html\">VaccinationEvent</a></p></div><p><b>Campaign</b>: <a href=\"CarePlan-ExampleVaccinationCampaign.html\">CarePlan/ExampleVaccinationCampaign</a></p><p><b>Health Status</b>: Healthy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-HealthStatusCS.html\">Health Status codes</a>#15)</span></p><p><b>AEFI</b>: false</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: anthrax vaccine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (VaccineCodeCS#24)</span></p><p><b>patient</b>: <a href=\"Patient-ExampleGiispatient.html\">Patient/ExampleGiispatient</a> &quot; DENVER&quot;</p><p><b>occurrence</b>: 2023-08-13</p><p><b>location</b>: <a href=\"Location-ExampleHealthfacilityLocation.html\">Location/ExampleHealthfacilityLocation</a> &quot;Saint's George&quot;</p><p><b>lotNumber</b>: av231</p><p><b>site</b>: Left Arm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-VaccinationSiteCS.html\">Vaccination site codes</a>#1)</span></p><p><b>note</b>: Patient with belonephobia</p><p><b>reasonCode</b>: Travel consult <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-VaccinationReasonCS.html\">Vaccination reason codes</a>#3)</span></p></div>"
+            "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Immunization</b><a name=\"ExampleVaccinationEvent\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Immunization &quot;ExampleVaccinationEvent&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VaccinationEvent.html\">VaccinationEvent</a></p></div><p><b>Campaign</b>: <a href=\"CarePlan-ExampleVaccinationCampaign.html\">CarePlan/ExampleVaccinationCampaign</a></p><p><b>Health Status</b>: Healthy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-HealthStatusCS.html\">Health Status codes</a>#15)</span></p><p><b>AEFI</b>: false</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: anthrax vaccine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (VaccineCS#24)</span></p><p><b>patient</b>: <a href=\"Patient-ExampleGiispatient.html\">Patient/ExampleGiispatient</a> &quot; DENVER&quot;</p><p><b>occurrence</b>: 2023-08-13</p><p><b>location</b>: <a href=\"Location-ExampleHealthfacilityLocation.html\">Location/ExampleHealthfacilityLocation</a> &quot;Saint's George&quot;</p><p><b>lotNumber</b>: av231</p><p><b>site</b>: Left Arm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-VaccineSiteCS .html\">Vaccination site codes</a>#1)</span></p><p><b>note</b>: Patient with belonephobia</p><p><b>reasonCode</b>: Travel consult <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-VaccinationReasonCS.html\">Vaccination reason codes</a>#3)</span></p></div>"
             },
             "extension" : [{
             "url" : "https://paho.org/fhir/giis/StructureDefinition/giis-campaign",
@@ -41,7 +41,7 @@ And the body will look like this:
             "status" : "completed",
             "vaccineCode" : {
             "coding" : [{
-                "system" : "https://paho.org/fhir/giis/CodeSystem/VaccineCodeCS",
+                "system" : "https://paho.org/fhir/giis/CodeSystem/VaccineCS",
                 "code" : "24",
                 "display" : "anthrax vaccine"
             }],
@@ -57,7 +57,7 @@ And the body will look like this:
             "lotNumber" : "av231",
             "site" : {
             "coding" : [{
-                "system" : "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS",
+                "system" : "https://paho.org/fhir/giis/CodeSystem/VaccineSiteCS ",
                 "code" : "1",
                 "display" : "Left Arm"
             }],

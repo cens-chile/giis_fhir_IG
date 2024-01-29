@@ -1,7 +1,7 @@
 // CODE SYSTEMS
 
-CodeSystem: VaccinationSiteCS
-Id: VaccinationSiteCS
+CodeSystem: VaccineSiteCS 
+Id: VaccineSiteCS 
 Title: "Vaccination site codes"
 Description: "Codes for vaccination sites, these ones are just examples"
 * ^version = "0.1.0"
@@ -110,8 +110,8 @@ Description: "Codes for communities, these ones are just examples"
 * #10 "Paget"
 * #11 "Port Royal"
 
-CodeSystem: VaccineCodeCS
-Id: VaccineCodeCS
+CodeSystem: VaccineCS
+Id: VaccineCS
 Title: "Vaccine codes"
 Description: "Codes for vaccines coming from a certain table (Item) from the GIIS"
 * ^version = "0.1.0"
@@ -130,8 +130,8 @@ Description: "Codes for vaccines coming from a certain table (Item) from the GII
 * #9 "yellow fever vaccine"
 * #0 "Other"
 
-CodeSystem: OtherVaccineCodeCS
-Id: OtherVaccineCodeCS
+CodeSystem: OtherVaccineCS
+Id: OtherVaccineCS
 Title: "Other Vaccine codes"
 Description: "Codes for vaccines coming from a certain table (OtherVaccines) from the GIIS"
 * ^version = "0.1.0"
@@ -182,13 +182,13 @@ ValueSet: VaccineCodeVS
 Id: VaccineCodeVS
 Title: "Vaccine codes"
 Description: "Vaccine codes used as examples"
-* include codes from system VaccineCodeCS
+* include codes from system VaccineCS
 
-ValueSet: OtherVaccineCodeVS
-Id: OtherVaccineCodeVS
+ValueSet: OtherVaccineVS
+Id: OtherVaccineVS
 Title: "Other Vaccine codes"
 Description: "Other Vaccine codes used as examples, these ones come from another table from the GIIS"
-* include codes from system OtherVaccineCodeCS
+* include codes from system OtherVaccineCS
 
 ValueSet: AEFINameVS
 Id: AEFINameVS
@@ -212,7 +212,7 @@ ValueSet: VaccinationSiteVS
 Id: VaccinationSiteVS
 Title: "Vaccination body site"
 Description: "Vaccination body site codes used as momentary examples"
-* include codes from system VaccinationSiteCS
+* include codes from system VaccineSiteCS 
 
 ValueSet: VaccinationReasonVS
 Id: VaccinationReasonVS

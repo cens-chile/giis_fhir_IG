@@ -26,7 +26,7 @@ Description: "A regular vaccination event, this one is for those ones that happe
     * code 0..1 
   * text 0..1 MS
 * vaccineCode.text ^short = "Vaccine name as text" 
-* vaccineCode from https://paho.org/fhir/giis/ValueSet/OtherVaccineCodeVS (example)
+* vaccineCode from https://paho.org/fhir/giis/ValueSet/OtherVaccineVS (example)
 
 * status 1..1 MS 
 * status ^short = "Code MUST be #completed OR #not-done"
@@ -41,7 +41,7 @@ Description: "A regular vaccination event, this one is for those ones that happe
   * coding 0..1 MS
     * code 0..1 MS
     * system 1..1 MS 
-    * system = "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS"  
+    * system = "https://paho.org/fhir/giis/CodeSystem/VaccineSiteCS "  
   * text 0..1 MS
 * site from https://paho.org/fhir/giis/ValueSet/VaccinationSiteVS (example)
 
