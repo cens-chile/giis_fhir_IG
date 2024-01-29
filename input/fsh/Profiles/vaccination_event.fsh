@@ -41,7 +41,7 @@ Description: "A regular vaccination event, this one is for those ones that happe
   * coding 0..1 MS
     * code 0..1 MS
     * system 1..1 MS 
-    * system = "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS "  
+    * system = "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS"  
   * text 0..1 MS
 * site from https://paho.org/fhir/giis/ValueSet/VaccinationSiteVS (example)
 

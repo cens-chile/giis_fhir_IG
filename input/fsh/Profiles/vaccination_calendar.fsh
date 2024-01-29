@@ -17,7 +17,7 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
   * coding 0..1 MS
     * code 1..1 MS  
     * system 1..1 MS 
-    * system = "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS "  
+    * system = "https://paho.org/fhir/giis/CodeSystem/VaccinationSiteCS"  
   * text 0..1 MS
 * site from https://paho.org/fhir/giis/ValueSet/VaccinationSiteVS (example)
 
