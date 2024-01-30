@@ -178,8 +178,8 @@ Description: "Patient Status related to an AEFI codes"
 
 // VALUE SETS
 
-ValueSet: VaccineCodeVS
-Id: VaccineCodeVS
+ValueSet: VaccineVS
+Id: VaccineVS
 Title: "Vaccine codes"
 Description: "Vaccine codes used as examples"
 * include codes from system VaccineCS
