@@ -111,4 +111,4 @@ Description: "Extension used to handle the Item Vaccine"
   * system 1..1 MS
   * code 1..1 MS
 * valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/VaccineCodeVS (example)
+* valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/VaccineVS (example)

@@ -7,7 +7,7 @@ Description: "The appointment handler for a vaccination event related to the vac
 
 * recommendation 1..* MS
 * recommendation.vaccineCode 1..1 MS 
-* recommendation.vaccineCode from https://paho.org/fhir/giis/ValueSet/VaccineCodeVS (example)
+* recommendation.vaccineCode from https://paho.org/fhir/giis/ValueSet/VaccineVS (example)
 * recommendation.vaccineCode.coding 0..1 MS
 * recommendation.vaccineCode.coding.code 0..1 MS  
 * recommendation.vaccineCode.text 0..1 MS 
