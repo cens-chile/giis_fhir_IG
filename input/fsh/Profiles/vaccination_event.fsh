@@ -18,7 +18,7 @@ Description: "A regular vaccination event, this one is for those ones that happe
 * location 1..1 MS 
 * location only Reference(HealthFacilityLocation)
 
-* lotNumber 0..1 MS 
+* lotNumber 1..1 MS 
 * lotNumber ^short = "If the vaccine is not from stock, the lot number is free text"
 
 * vaccineCode 1..1 MS 
