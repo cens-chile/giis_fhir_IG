@@ -2,7 +2,7 @@
 
 There will be a post of a resource that looks like this: 
 
-        PSOT http://localhost:8080/fhir/QuestionnaireResponse/
+        POST http://localhost:8080/fhir/QuestionnaireResponse/
 
 And the body will be something like this example: 
 

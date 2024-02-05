@@ -1,1 +1,0 @@
-Here will be a link to a test server (this section is also a COULD BE rather than a WILL BE)
