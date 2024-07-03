@@ -8,6 +8,8 @@ Description: "Codes for vaccination sites, these ones are just examples"
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "Left arm" 
 * #2 "Right arm"
 * #3 "Left leg"
@@ -23,7 +25,8 @@ Description: "Reasons why the immunization didn't occurred, these ones are just 
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
-
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "Child is sick" 
 * #2 "Child came later"
 * #3 "Child has allergies"
@@ -40,7 +43,8 @@ Description: "Codes for vaccination reason, these ones are just examples"
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
-
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "Adult immunization" 
 * #2 "Vaccination campaign"
 * #3 "Travel consult"
@@ -59,7 +63,8 @@ Description: "Codes for Health Status, these ones are just examples"
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
-
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "Pregnant"
 * #2 "Cardiovascular disease"
 * #3 "Diabetes"
@@ -84,7 +89,8 @@ Description: "Codes for birthplaces, these ones are just examples"
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
-
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "Home"
 * #2 "Hospital"
 * #3 "Health facility"
@@ -100,7 +106,8 @@ Description: "Codes for communities, these ones are just examples"
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
- 
+* ^experimental = true
+* ^caseSensitive = true
 * #3 "Dalton E Tucker"
 * #4 "East End"
 * #5 "Elliot"
@@ -118,7 +125,8 @@ Description: "Codes for vaccines coming from a certain table (Item) from the GII
 * ^status = #active
 * ^date = "2024-01-15"
 * ^content = #complete
-
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "adenovirus vaccine"
 * #2 "anthrax vaccine"
 * #3 "hepatitis A vaccine"
@@ -138,7 +146,8 @@ Description: "Codes for vaccines coming from a certain table (OtherVaccines) fro
 * ^status = #active
 * ^date = "2024-01-15"
 * ^content = #complete
-
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "adenovirus vaccine"
 * #2 "dengue fever vaccine"
 * #3 "hepatitis A vaccine"
@@ -154,6 +163,8 @@ CodeSystem: AEFISeverityCS
 Id: AEFISeverityCS
 Title: "Adverse Event severity codes"
 Description: "Codes for adverse events severity"
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "Severe" 
 * #2 "Mild"
 * #3 "Moderate"
@@ -162,6 +173,8 @@ CodeSystem: AEFINameCS
 Id: AEFINameCS
 Title: "Adverse Event codes"
 Description: "Codes for adverse events"
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "Headache" 
 * #2 "Sore throath"
 * #3 "Nausea"
@@ -172,6 +185,8 @@ CodeSystem: AEFIPatientStatusCS
 Id: AEFIPatientStatusCS
 Title: "Patient Status related to an AEFI codes"
 Description: "Patient Status related to an AEFI codes"
+* ^experimental = true
+* ^caseSensitive = true
 * #1 "Recovered"
 * #2 "Following"
 * #3 "Dead"
@@ -182,64 +197,75 @@ ValueSet: VaccineVS
 Id: VaccineVS
 Title: "Vaccine codes"
 Description: "Vaccine codes used as examples"
+* ^experimental = true
 * include codes from system VaccineCS
 
 ValueSet: OtherVaccineVS
 Id: OtherVaccineVS
 Title: "Other Vaccine codes"
 Description: "Other Vaccine codes used as examples, these ones come from another table from the GIIS"
+* ^experimental = true
 * include codes from system OtherVaccineCS
 
 ValueSet: AEFINameVS
 Id: AEFINameVS
 Title: "Adverse Event codes"
 Description: "Codes for adverse events used as examples"
+* ^experimental = true
 * include codes from system AEFINameCS
 
 ValueSet: AEFISeverityVS
 Id: AEFISeverityVS
 Title: "Adverse Event severity codes"
 Description: "Codes for adverse events severity used as examples"
+* ^experimental = true
 * include codes from system AEFISeverityCS
 
 ValueSet: AEFIPatientStatusVS
 Id: AEFIPatientStatusVS
 Title: "Patient Status related to an AEFI codes"
 Description: "Patient Status related to an AEFI codes"
+* ^experimental = true
 * include codes from system AEFIPatientStatusCS
 
 ValueSet: VaccinationSiteVS
 Id: VaccinationSiteVS
 Title: "Vaccination body site"
 Description: "Vaccination body site codes used as momentary examples"
+* ^experimental = true
 * include codes from system VaccinationSiteCS 
 
 ValueSet: VaccinationReasonVS
 Id: VaccinationReasonVS
 Title: "Vaccination reason"
 Description: "Vaccination reason codes used as momentary examples"
+* ^experimental = true
 * include codes from system VaccinationReasonCS
 
 ValueSet: NonVaccinationReasonVS
 Id: NonVaccinationReasonVS
 Title: "Non vaccination reason"
 Description: "Non vaccination reason codes used as momentary examples"
+* ^experimental = true
 * include codes from system NonVaccinationReasonCS
 
 ValueSet: HealthStatusVS
 Id: HealthStatusVS
 Title: "Health Status"
 Description: "Health Status codes used as momentary examples"
+* ^experimental = true
 * include codes from system HealthStatusCS
 
 ValueSet: BirthplaceVS
 Id: BirthplaceVS
 Title: "Birthplace"
 Description: "Birthplace codes used as momentary examples"
+* ^experimental = true
 * include codes from system BirthplaceCS
 
 ValueSet: CommunityVS
 Id: CommunityVS
 Title: "Community"
 Description: "Community codes used as momentary examples"
+* ^experimental = true
 * include codes from system CommunityCS
