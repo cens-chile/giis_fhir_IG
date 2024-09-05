@@ -49,6 +49,9 @@ Description: "A regular vaccination event, this one is for those ones that happe
 
 * extension 1..4
 
+* performer 1..1 
+* performer.actor only Reference(Practitioner)
+
 //Immunization campaign extension
 * extension contains Campaign named vaccinationCampaign 0..1 MS 
 * extension[vaccinationCampaign] ^short = "Extension made for handling Immunization Campaigns." 

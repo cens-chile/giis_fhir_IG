@@ -42,6 +42,9 @@ Description: "A vaccination event related to a vaccination calendar. This vaccin
 
 * note 0..1 MS 
  
+* performer 1..1 
+* performer.actor only Reference(Practitioner)
+
 * extension 1..4
 
 //Immunization campaign extension

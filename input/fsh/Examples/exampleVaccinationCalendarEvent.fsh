@@ -19,6 +19,8 @@ Usage: #example
 
 * occurrenceDateTime = "2023-08-13"
 
+* performer.actor = Reference(ExamplePractitioner)
+
 * lotNumber = "all231"
 
 * vaccineCode.coding.system = "https://paho.org/fhir/giis/CodeSystem/VaccineCS"
