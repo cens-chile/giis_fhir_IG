@@ -72,6 +72,14 @@ Description: "Extension used to handle the community of a patient"
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from https://paho.org/fhir/giis/ValueSet/CommunityVS (example)
 
+Extension: PatientRecordCreator 
+Id: giis-recordcreator
+Title: "Patient record creator" 
+Description: "Extension made for handling the creator of a patient's record"
+* ^context.type = #element 
+* ^context.expression = #Patient
+* valueReference only Reference(Practitioner)
+
 
 Extension: AppointmentHandler
 Id: giis-appointment

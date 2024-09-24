@@ -20,6 +20,9 @@ Usage: #example
 * extension[PatientNotes].url = "https://paho.org/fhir/giis/StructureDefinition/giis-patnotes"
 * extension[PatientNotes].valueString = "Patient has allergy to ibuprofen"
 
+* extension[recordCreator].url = "https://paho.org/fhir/giis/StructureDefinition/giis-recordcreator"
+* extension[recordCreator].valueReference = Reference(ExamplePractitioner)
+
 * identifier[SystemID].system = "http://www.giisidentifier.org/ID/SystemID"
 * identifier[SystemID].value = "16399288"
 

@@ -114,7 +114,7 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 * managingOrganization 1..1 MS 
 * managingOrganization only Reference(HealthFacility)
 
-* extension 1..4
+* extension 2..5
 
 * extension contains VillageHandler named village 1..1 
 * extension[village] ^short = "Extension made for making a patient able to reference a village"
@@ -127,3 +127,6 @@ Description: "A patient from GIIS, this one can be either a child or an adult."
 
 * extension contains PatientNotes named notes 0..1
 * extension[notes] ^short = "Extension made for being able to add notes to a GIIS patient"
+
+* extension contains PatientRecordCreator named recordCreator 1..1 
+* extension[recordCreator] ^short = "Extension made for handling the creator of the patient's record"
