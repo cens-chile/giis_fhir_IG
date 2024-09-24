@@ -173,6 +173,13 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/giis/ValueSet/AEFIPatientStatusVS"
 * item[=].item[=].item[=].text = "Health status of the patient related with this ESAVI event"
 
+/////////////////////
+
+* item[=].item[=].item[+].type = #integer
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "AEFIRecordCreator"
+* item[=].item[=].item[=].text = "Id of the AEFI record creator"
+
 /////////////////////  Grupo gravedadESAVI //////////////////////////////////
 * item[=].item[+].type = #group
 * item[=].item[=].required = true

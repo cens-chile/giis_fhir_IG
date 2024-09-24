@@ -86,6 +86,8 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "estadoPacienteESAVI"
 * item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/AEFIPatientStatusCS#2
 * item[=].item[=].item[=].answer.valueCoding.display = "Following"
+* item[=].item[=].item[+].linkId = "AEFIRecordCreator"
+* item[=].item[=].item[=].answer.valueInteger = 623515
 * item[=].item[+].linkId = "gravedadESAVI"
 * item[=].item[=].text = "Determination of the severity status of ESAVI"
 * item[=].item[=].item[0].linkId = "tipoGravedad"
