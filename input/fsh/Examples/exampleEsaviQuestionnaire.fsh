@@ -176,9 +176,14 @@ Usage: #example
 /////////////////////
 
 * item[=].item[=].item[+].type = #integer
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "AEFIRecordCreator"
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "AEFIRecordCreatorID"
 * item[=].item[=].item[=].text = "Id of the AEFI record creator"
+
+* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "AEFIRecordCreatorName"
+* item[=].item[=].item[=].text = "Name of the AEFI record creator"
 
 /////////////////////  Grupo gravedadESAVI //////////////////////////////////
 * item[=].item[+].type = #group
