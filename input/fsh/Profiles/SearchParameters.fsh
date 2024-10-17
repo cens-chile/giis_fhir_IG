@@ -208,15 +208,15 @@ Usage: #definition
 
 // Crear SP Caretaker name.family & name.given como type = #string 
 
-Instance: caretaker-firstname
+Instance: patient-by-caretaker-name
 InstanceOf: SearchParameter
 Usage: #definition
 * meta.versionId = "1"
 * meta.lastUpdated = "2023-11-21T15:52:22.824+00:00"
 * meta.source = "#1713de7ffdefbac0"
-* url = "https://paho.org/fhir/giis/SearchParameter/caretaker-firstname"
+* url = "https://paho.org/fhir/giis/SearchParameter/patient-by-caretaker-name"
 * version = "1"
-* name = "CaretakerFirstName"
+* name = "PatientByCaretakerName"
 * status = #active
 * experimental = true
 * date = "2023-10-10"
@@ -225,8 +225,9 @@ Usage: #definition
 * contact.telecom[=].value = "https://cens.cl"
 * contact.telecom[+].system = #email
 * contact.telecom[=].value = "contacto@cens.cl"
-* description = "Caretaker search by first name"
-* code = #caretaker-firstname
+* description = "Patient search by the caretaker's name
+> Notice that this search would end up looking like this: {{base}}/Patient?_has:RelatedPerson:patient:given=*"
+* code = #patient-by-caretaker-firstname
 * base[0] = #RelatedPerson
 * type = #string
 * expression = "RelatedPerson.name.given"
@@ -234,15 +235,15 @@ Usage: #definition
 * multipleOr = false
 * xpathUsage = #normal
 
-Instance: caretaker-lastname
+Instance: patient-by-caretaker-lastname
 InstanceOf: SearchParameter
 Usage: #definition
 * meta.versionId = "1"
 * meta.lastUpdated = "2023-11-21T15:52:22.824+00:00"
 * meta.source = "#1713de7ffdefbac0"
-* url = "https://paho.org/fhir/giis/SearchParameter/caretaker-lastname"
+* url = "https://paho.org/fhir/giis/SearchParameter/patient-by-caretaker-lastname"
 * version = "1"
-* name = "CaretakerLastName"
+* name = "PatientByCaretakerLastName"
 * status = #active
 * experimental = true
 * date = "2023-10-10"
@@ -251,8 +252,9 @@ Usage: #definition
 * contact.telecom[=].value = "https://cens.cl"
 * contact.telecom[+].system = #email
 * contact.telecom[=].value = "contacto@cens.cl"
-* description = "Caretaker search by last name"
-* code = #caretaker-lastname
+* description = "Patient search by the caretaker's last name
+> Notice that this search would end up looking like this: {{base}}/Patient?_has:RelatedPerson:patient:family=*"
+* code = #patient-by-caretaker-lastname
 * base[0] = #RelatedPerson
 * type = #string
 * expression = "RelatedPerson.name.family"
