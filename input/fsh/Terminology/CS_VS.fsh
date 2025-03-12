@@ -8,6 +8,7 @@ Description: "Codes for vaccination sites, these ones are just examples"
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
+* ^language = #en-US
 * ^experimental = true
 * ^caseSensitive = true
 * #1 "Left arm" 
@@ -25,6 +26,7 @@ Description: "Reasons why the immunization didn't occurred, these ones are just 
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
+* ^language = #en-US
 * ^experimental = true
 * ^caseSensitive = true
 * #1 "Child is sick" 
@@ -43,6 +45,7 @@ Description: "Codes for vaccination reason, these ones are just examples"
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
+* ^language = #en-US
 * ^experimental = true
 * ^caseSensitive = true
 * #1 "Adult immunization" 
@@ -62,6 +65,7 @@ Description: "Codes for Health Status, these ones are just examples"
 * ^version = "0.1.0"
 * ^status = #active
 * ^date = "2023-11-07"
+* ^language = #en-US
 * ^content = #complete
 * ^experimental = true
 * ^caseSensitive = true
@@ -88,6 +92,7 @@ Description: "Codes for birthplaces, these ones are just examples"
 * ^version = "0.1.0"
 * ^status = #active
 * ^date = "2023-11-07"
+* ^language = #en-US
 * ^content = #complete
 * ^experimental = true
 * ^caseSensitive = true
@@ -106,6 +111,7 @@ Description: "Codes for communities, these ones are just examples"
 * ^status = #active
 * ^date = "2023-11-07"
 * ^content = #complete
+* ^language = #en-US
 * ^experimental = true
 * ^caseSensitive = true
 * #3 "Dalton E Tucker"
@@ -125,6 +131,7 @@ Description: "Codes for vaccines coming from a certain table (Item) from the GII
 * ^status = #active
 * ^date = "2024-01-15"
 * ^content = #complete
+* ^language = #en-US
 * ^experimental = true
 * ^caseSensitive = true
 * #1 "adenovirus vaccine"
@@ -145,6 +152,7 @@ Description: "Codes for vaccines coming from a certain table (OtherVaccines) fro
 * ^version = "0.1.0"
 * ^status = #active
 * ^date = "2024-01-15"
+* ^language = #en-US
 * ^content = #complete
 * ^experimental = true
 * ^caseSensitive = true
@@ -164,6 +172,7 @@ Id: AEFISeverityCS
 Title: "Adverse Event severity codes"
 Description: "Codes for adverse events severity"
 * ^experimental = true
+* ^language = #en-US
 * ^caseSensitive = true
 * #1 "Severe" 
 * #2 "Mild"
@@ -174,6 +183,7 @@ Id: AEFINameCS
 Title: "Adverse Event codes"
 Description: "Codes for adverse events"
 * ^experimental = true
+* ^language = #en-US
 * ^caseSensitive = true
 * #1 "Headache" 
 * #2 "Sore throath"
@@ -186,6 +196,7 @@ Id: AEFIPatientStatusCS
 Title: "Patient Status related to an AEFI codes"
 Description: "Patient Status related to an AEFI codes"
 * ^experimental = true
+* ^language = #en-US
 * ^caseSensitive = true
 * #1 "Recovered"
 * #2 "Following"
