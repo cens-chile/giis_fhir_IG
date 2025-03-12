@@ -45,9 +45,9 @@ Usage: #example
 * item[=].item[=].item[0].linkId = "nombreVacuna"
 * item[=].item[=].item[=].text = "Name of the vaccine administered"
 * item[=].item[=].item[=].answer.valueString = "IPV"
-* item[=].item[=].item[+].linkId = "identificadorVacuna"
-* item[=].item[=].item[=].text = "Correlative identifier of the vaccine useful to refer to the vaccine registered in other sections of the guide."
-* item[=].item[=].item[=].answer.valueInteger = 12332
+* item[=].item[=].item[+].linkId = "codigoVacunaOtro"
+* item[=].item[=].item[=].text = "Vaccine code"
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/giis/CodeSystem/OtherVaccineCS#0
 * item[=].item[=].item[+].linkId = "numeroDosisVacuna"
 * item[=].item[=].item[=].text = "Ordinal number of the administered dose"
 * item[=].item[=].item[=].answer.valueInteger = 1
@@ -56,9 +56,9 @@ Usage: #example
 * item[=].item[=].item[0].linkId = "nombreVacunatorio"
 * item[=].item[=].item[=].text = "Vacunatory's name"
 * item[=].item[=].item[=].answer.valueString = "Saint's George Hospital"
-* item[=].item[=].item[+].linkId = "nombreDireccionVacunatorio"
-* item[=].item[=].item[=].text = "Full address of the institution where the vaccine was administered"
-* item[=].item[=].item[=].answer.valueString = "Saint's George Ave. 12399"
+* item[=].item[=].item[+].linkId = "codigoVacunatorio"
+* item[=].item[=].item[=].text = "Code of the institution where the vaccine was administered"
+* item[=].item[=].item[=].answer.valueString = "123142"
 * item[+].linkId = "tipoVacunacion"
 * item[=].item[0].linkId = "vaccinationEventCalendarId"
 * item[=].item[=].text = "Id of a GIIS calendarized vaccination event"

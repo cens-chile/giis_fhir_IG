@@ -72,17 +72,16 @@ Usage: #example
 * item[=].item[=].linkId = "datosVacunas"
 * item[=].item[=].text = "Data of the administered vaccines"
 
-//////////////nombreVacuuna OK
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "nombreVacuna"
 * item[=].item[=].item[=].text = "Name of the vaccine administered"
 
-//////////////nombreVacuuna OK
-* item[=].item[=].item[+].type = #integer
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "identificadorVacuna"
-* item[=].item[=].item[=].text = "Correlative identifier of the vaccine useful to refer to the vaccine registered in other sections of the guide."
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "codigoVacunaOtro"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/giis/ValueSet/OtherVaccineVS"
+* item[=].item[=].item[=].text = "Vaccine code"
 
 /////////////////////  Grupo codigoVacunaOtro //////////////////////////////////
 
@@ -106,8 +105,8 @@ Usage: #example
 
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "nombreDireccionVacunatorio"
-* item[=].item[=].item[=].text = "Full address of the institution where the vaccine was administered"
+* item[=].item[=].item[=].linkId = "codigoVacunatorio"
+* item[=].item[=].item[=].text = "Code of the institution where the vaccine was administered"
 
 // Grupos tipoVacunacion 
 
