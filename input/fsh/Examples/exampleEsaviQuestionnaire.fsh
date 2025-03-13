@@ -103,7 +103,7 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "nombreVacunatorio"
 * item[=].item[=].item[=].text = "Vacunatory's name"
 
-* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[+].type = #integer
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoVacunatorio"
 * item[=].item[=].item[=].text = "Code of the institution where the vaccine was administered"

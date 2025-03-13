@@ -58,7 +58,7 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueString = "Saint's George Hospital"
 * item[=].item[=].item[+].linkId = "codigoVacunatorio"
 * item[=].item[=].item[=].text = "Code of the institution where the vaccine was administered"
-* item[=].item[=].item[=].answer.valueString = "123142"
+* item[=].item[=].item[=].answer.valueInteger = 12
 * item[+].linkId = "tipoVacunacion"
 * item[=].item[0].linkId = "vaccinationEventCalendarId"
 * item[=].item[=].text = "Id of a GIIS calendarized vaccination event"
